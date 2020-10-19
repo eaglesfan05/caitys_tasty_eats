@@ -26,5 +26,10 @@ $(document).ready(function () {
       text = text.substring(0, text.length - 1);
       $("#orderHere").val(text);
     });
+    $("option:selected").each(function () {
+      text += $(this).val() + ", ";
+      text = text.substring(0, text.length - 1);
+      $("#orderHere").val(text);
+    });
   });
 });
