@@ -31,7 +31,7 @@
     <!-- Nav bar -->
     <div class="content">
       <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="scroll">
-        <a class="navbar-brand" href="#main">
+        <a class="navbar-brand" href="../index.html">
           <strong>Caity's Tasty Eats</strong></a
         >
         <button
@@ -65,118 +65,6 @@
         </div>
       </nav>
 
-      <!-- Brand, Home, Food, Place your Order, Contact -->
-      <!-- Image quick about -->
-      <div class="container">
-        <div class="main" id="main">
-          <div class="image-holder">
-            <img class="pics" src="assets/images/caityCopy.jpg" />
-            <img class="pics hide-sm" src="assets/images/caityandIsaac.jpg" />
-          </div>
-          <h1>Eat Healthy and Well</h1>
-          <p>Don't feel like cooking? Let me do it for you!</p>
-          <ul>
-            <li>Catering</li>
-            <li>Meals To-Go</li>
-            <li>Fresh Ingredients</li>
-            <li>Gluten-free</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Images of food -->
-      <div class="container">
-        <div id="food">
-          <h1 id="checkOut">Check Out My Work!</h1>
-          <div class="food">
-            <div class="holder">
-              <img
-                src="./assets/images/119846168_328182011576688_1315291415191168691_n.jpg"
-              />
-            </div>
-            <div class="holder">
-              <img
-                src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-              />
-            </div>
-            <div class="holder">
-              <img
-                src="./assets/images/120105404_358185532040104_3337092783762587430_n.jpg"
-              />
-            </div>
-            <div class="holder">
-              <img
-                src="./assets/images/120139953_2426269064345653_58091220359409123_n.jpg"
-              />
-            </div>
-
-            <div class="holder">
-              <img
-                src="./assets/images/120892234_1052915515166769_6645447916041174211_n.jpg"
-              />
-            </div>
-
-            <div class="holder">
-              <img
-                src="./assets/images/120926746_780709315831190_6996768605266888340_n.jpg"
-              />
-            </div>
-
-            <div class="holder">
-              <img
-                src="./assets/images/120962250_652079475451616_7313310074452676084_n.jpg"
-              />
-            </div>
-
-            <div class="holder">
-              <img
-                src="./assets/images/121028345_384213899414739_4770757354816483373_n.jpg"
-              />
-            </div>
-
-            <div class="holder">
-              <img
-                src="./assets/images/120144804_368843227485469_7806116689752637546_n.jpg"
-              />
-            </div>
-
-            <div class="holder">
-              <img
-                src="./assets/images/120948310_368038247676646_5009874799288341265_n.jpg"
-              />
-            </div>
-
-            <div class="holder">
-              <img
-                src="./assets/images/120948310_368038247676646_5009874799288341265_n.jpg"
-              />
-              <img
-                src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-              />
-              <img
-                src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-              />
-              <img
-                src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-              />
-            </div>
-
-            <img
-              src="./assets/images/120948310_368038247676646_5009874799288341265_n.jpg"
-            />
-            <img
-              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-            />
-            <img
-              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-            />
-            <img
-              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-            />
-          </div>
-        </div>
-      </div>
-
       <!-- Menu -->
       <!-- TODO -->
       <!-- Turn this whole menu into a card with tabs that you can click for different types of food. Each has button to add item to order. Order will build with items added and add up price in email. email sent will be built order with contact info and order to caitys email -->
@@ -201,18 +89,18 @@
                     </h2>
                     <p class="small">Sides not included</p>
                     <div id="collapseOne" class="collapse">
-                      <select id="comfort" class="form-control order">
-                        <option selected>Make Your Pick</option>
-                        <option>
+                      <select id="comfort" class="form-control fa">
+                        <option value="fas fa-plus creamyShrimp">
                           <span class="new">NEW</span> Chicken and Shrimp Creamy
                           Cajun Pasta
                         </option>
-                        <option>
+                        <option value="fas fa-plus  tostada">
+                          &#xf067;
                           <span class="new">NEW</span> Chicken Tostatdos
                         </option>
-                        <option>Kielbasa Hash</option>
-                        <option>Jambalaya and Rice</option>
-                        <option>Shrimp Baked Mac and Cheese</option>
+                        <option value="Kielbasa">Kielbasa Hash</option>
+                        <option value="jambalaya">Jambalaya and Rice</option>
+                        <option value="mac">Shrimp Baked Mac and Cheese</option>
                       </select>
                     </div>
                   </div>
@@ -250,9 +138,9 @@
                       <h3>Side of meat $4</h3>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Baked Mac and Cheese"
+                          value=""
                           id="baked"
                         />
                         <label class="form-check-label" for="baked"
@@ -261,9 +149,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Smashed Red Potatoes"
+                          value=""
                           id="smashed"
                         />
                         <label class="form-check-label" for="baked"
@@ -272,9 +160,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Jallof Rice"
+                          value=""
                           id="jallof"
                         />
                         <label class="form-check-label" for="jallof"
@@ -283,9 +171,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="White Rice"
+                          value=""
                           id="white"
                         />
                         <label class="form-check-label" for="white"
@@ -294,9 +182,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Black Beans"
+                          value=""
                           id="beans"
                         />
                         <label class="form-check-label" for="beans"
@@ -305,9 +193,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Seasoned Broccoli"
+                          value=""
                           id="broccoli"
                         />
                         <label class="form-check-label" for="broccoli"
@@ -316,9 +204,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Cinnamon Sugar Sweet Potatoes"
+                          value=""
                           id="sweet"
                         />
                         <label class="form-check-label" for="sweet"
@@ -342,9 +230,9 @@
                     <div id="collapseFour" class="collapse">
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Banana Pudding"
+                          value=""
                           id="banana"
                         />
                         <label class="form-check-label" for="banana"
@@ -353,9 +241,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Smores"
+                          value=""
                           id="smores"
                         />
                         <label class="form-check-label" for="smores"
@@ -364,9 +252,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Chocolate Ribbon Pie"
+                          value=""
                           id="chocolatePie"
                         />
                         <label class="form-check-label" for="chocolatePie"
@@ -375,9 +263,9 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input
-                          class="form-check-input check"
+                          class="form-check-input"
                           type="checkbox"
-                          value="Mixed Berry Shortcake"
+                          value=""
                           id="shortcake"
                         />
                         <label class="form-check-label" for="shortcake"
@@ -447,7 +335,7 @@
                 >Contact Me with Questions/ Review Your Order</label
               >
               <br />
-              <textarea id="orderHere" class="form-control"></textarea>
+              <textarea class="form-control"></textarea>
             </div>
             <div class="form-group">
               <!-- <div class="buttons">
@@ -462,7 +350,7 @@
             <div class="buttons">
               <div class="btn-group" role="group">
                 <a class="btn btn-primary custom" href="#menu">
-                  Edit Your Order
+                  Review Your Order
                 </a>
                 <button class="btn btn-success custom" type="submit">
                   Send

@@ -168,7 +168,7 @@ h2 {
 .menuToggle:hover {
   cursor: pointer;
   text-decoration: underline;
-  font-size: 3em;
+  /* font-size: 3em; */
   color: Purple;
 }
 
