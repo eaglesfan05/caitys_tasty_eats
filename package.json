@@ -1,0 +1,29 @@
+{
+  "name": "caitysTreats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaglesfan05/caitys_tasty_eats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eaglesfan05/caitys_tasty_eats/issues"
+  },
+  "homepage": "https://github.com/eaglesfan05/caitys_tasty_eats#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.14",
+    "nodemailer-mailgun-transport": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
