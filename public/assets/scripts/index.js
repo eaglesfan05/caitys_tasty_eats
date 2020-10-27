@@ -20,10 +20,13 @@
 //   });
 $(document).ready(function () {
   $("#submitOrder").click(function () {
+    // e.preventdefault()
     var order = [];
     $(".check:checked").each(function () {
       let selection = $(this).val();
+      console.log(selection)
       order.push(selection);
+      
     });
     $("option:selected").each(function () {
       //  I want to stop default values from being included in the message.
@@ -71,4 +74,10 @@ $(document).ready(function () {
     // alert(`${picked} was picked`);
     // $('#orderHere').text(picked)
   });
+  // $('#sendOrder').on('submit', (e) => {
+  //   e.preventdefault()
+  // setTimeout(function() {
+  //   location.reload()
+  // }, 1000)
+  // })
 });

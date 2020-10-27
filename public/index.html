@@ -515,7 +515,7 @@
       <!-- social media links -->
       <div class="container">
         <div class="contact" id="order">
-          <form>
+          <!-- <form id="orderForm">
             <div class="form-group">
               <label for="name">Who Are You?</label>
               <input
@@ -543,30 +543,36 @@
               <br />
               <textarea id="orderHere" class="form-control"></textarea>
             </div>
-            <div class="form-group">
-              <!-- <div class="buttons">
-                <div class="btn-group" role="group">
-                  <a class="btn btn-primary custom" href="#order">
-                    Review Your Order
-                  </a>
-                  <a class="btn btn-success custom" type="submit"> Send </a>
-                </div>
-              </div> -->
-            </div>
+         
             <div class="buttons">
               <div class="btn-group" role="group">
                 <a class="btn btn-primary custom" href="#menu">
                   Edit Your Order
                 </a>
-                <button class="btn btn-success custom" type="submit">
+                <button class="btn btn-success custom" id="sendOrder" type="submit">
                   Send
                 </button>
               </div>
             </div>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
+
+    <!-- fte -->
+    
+    <!-- FormToEmail HTML -->	 
+<form action="https://formtoemail.com/user_forms.php" method="post" class="fte">
+  <input type="hidden" name="user_id" value="YKXQMB7R4OXW367DPDRO">
+  <input type="hidden" name="form_id" value="1">
+  Name: <br><input type="text" name="name" placeholder="Enter your name...">
+  Email or Phone Number: <br><input type="text" name="email" placeholder="name@example.com">
+  Order: <br><textarea id="orderHere" name="comments" rows="5" placeholder="Enter your comments..."></textarea>
+  <input type="submit" value="Place Order"> <span class="credit">Created with <a href="https://formtoemail.com" rel="nofollow"
+    >FormToEmail</a></span>
+</form>
+
+
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
