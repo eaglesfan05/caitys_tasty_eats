@@ -19,8 +19,8 @@
 //     // alert(order);
 //   });
 $(document).ready(function () {
-  $("#submitOrder").click(function () {
-    // e.preventdefault()
+  $("#submitOrder").click(function (e) {
+    e.preventDefault()
     var order = [];
     $(".check:checked").each(function () {
       let selection = $(this).val();
@@ -29,7 +29,7 @@ $(document).ready(function () {
       
     });
     $("option:selected").each(function () {
-      //  I want to stop default values from being included in the message.
+ 
       let selection = $(this).val();
       order.push(selection);
       //   if ($("option:selected").attr("id") == "default") {
@@ -49,6 +49,7 @@ $(document).ready(function () {
     //   let filtered = order.filter((item) => item.id !== "default");
     //   alert(filtered);
     // }
+         //  I want to stop default values from being included in the message.
     const elementGone = 'Make Your Pick'
     order = order.filter((item) => item !== elementGone);
     $("#orderHere").text(order);

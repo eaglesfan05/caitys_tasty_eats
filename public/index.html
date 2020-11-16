@@ -10,7 +10,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/assets/stylesheets/style.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap"
@@ -30,7 +30,7 @@
   <body data-spy="scroll" data-target="#scroll" offset="10">
     <!-- Nav bar -->
     <div class="content">
-      <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="scroll">
+      <nav class="navbar navbar-expand-lg navbar-custom" id="scroll">
         <a class="navbar-brand" href="#main">
           <strong>Caity's Tasty Eats</strong></a
         >
@@ -54,10 +54,10 @@
               <a class="nav-link" href="#menu">Current Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/order.html">Order Now!</a>
+              <a class="nav-link" href="#order">Order Now!</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              <a class="nav-link" href="./pages/contact.html" tabindex="-1" aria-disabled="true"
                 >Hit Me Up!</a
               >
             </li>
@@ -67,22 +67,25 @@
 
       <!-- Brand, Home, Food, Place your Order, Contact -->
       <!-- Image quick about -->
-      <div class="container">
-        <div class="main" id="main">
-          <div class="image-holder">
-            <img class="pics" src="assets/images/caityCopy.jpg" />
-            <img class="pics hide-sm" src="assets/images/caityandIsaac.jpg" />
+      <div class="background">
+        <div class="container">
+          <div class="main" id="main">
+            <div class="image-holder">
+              <img class="pics" src="assets/images/caityCopy.jpg" />
+              <img class="pics hide-sm" src="assets/images/caityandIsaac.jpg" />
+            </div>
+            <h1>Eat Healthy and Well</h1>
+            <p>Don't feel like cooking? Let me do it for you!</p>
+            <ul>
+              <li>Catering</li>
+              <li>Meals To-Go</li>
+              <li>Fresh Ingredients</li>
+              <li>Gluten-free</li>
+            </ul>
           </div>
-          <h1>Eat Healthy and Well</h1>
-          <p>Don't feel like cooking? Let me do it for you!</p>
-          <ul>
-            <li>Catering</li>
-            <li>Meals To-Go</li>
-            <li>Fresh Ingredients</li>
-            <li>Gluten-free</li>
-          </ul>
         </div>
       </div>
+    
 
       <!-- Images of food -->
       <div class="container">
@@ -150,17 +153,26 @@
               <img
                 src="./assets/images/120948310_368038247676646_5009874799288341265_n.jpg"
               />
-              <img
-                src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-              />
-              <img
-                src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-              />
-              <img
-                src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-              />
             </div>
 
+            <div class="holder">
+              <img
+              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
+            />
+            </div>
+             <div class="holder">
+              <img
+              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
+            />
+             </div>
+             <div class="holder">
+              <img
+              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
+            />
+             </div>
+          </div> 
+            
+<!-- 
             <img
               src="./assets/images/120948310_368038247676646_5009874799288341265_n.jpg"
             />
@@ -172,7 +184,7 @@
             />
             <img
               src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-            />
+            /> -->
           </div>
         </div>
       </div>
@@ -201,7 +213,7 @@
                     </h2>
                     <p class="small">Sides not included</p>
                     <div id="collapseOne" class="collapse">
-                      <select id="comfort" class="form-control order">
+                      <select id="comfort" class="custom-select form-control order" multiple>
                         <option id="default">Make Your Pick</option>
                         <option>
                           <span class="new">NEW</span> Chicken and Shrimp Creamy
@@ -488,7 +500,7 @@
                     class="btn btn-secondary btn-lg btn-block"
                     id="submitOrder"
                   >
-                    Review and Send Your Order!
+                    Click to Add Selections to Order Message!
                   </button>
                 </div>
               </div>
@@ -562,15 +574,21 @@
     <!-- fte -->
     
     <!-- FormToEmail HTML -->	 
-<form action="https://formtoemail.com/user_forms.php" method="post" class="fte">
-  <input type="hidden" name="user_id" value="YKXQMB7R4OXW367DPDRO">
-  <input type="hidden" name="form_id" value="1">
-  Name: <br><input type="text" name="name" placeholder="Enter your name...">
-  Email or Phone Number: <br><input type="text" name="email" placeholder="name@example.com">
-  Order: <br><textarea id="orderHere" name="comments" rows="5" placeholder="Enter your comments..."></textarea>
-  <input type="submit" value="Place Order"> <span class="credit">Created with <a href="https://formtoemail.com" rel="nofollow"
-    >FormToEmail</a></span>
-</form>
+    <div id="checkOut">
+      <form action="https://formtoemail.com/user_forms.php" method="post" class="fte">
+        <h1>Review your order</h1><br>
+        <p>Please make sure to let me know about any allergies or requests</p>
+        
+        <input type="hidden" name="user_id" value="YKXQMB7R4OXW367DPDRO">
+        <input type="hidden" name="form_id" value="1">
+        Name: <br><input type="text" name="name" placeholder="Enter your name...">
+        Email or Phone Number: <br><input type="text" name="email" placeholder="name@example.com">
+        Order: <br><textarea id="orderHere" name="comments" rows="5" placeholder="Start your order..."></textarea>
+        <input type="submit" value="Place Order"> <span class="credit">Created with <a href="https://formtoemail.com" rel="nofollow"
+          >FormToEmail</a></span>
+      </form>
+    </div>
+
 
 
 
