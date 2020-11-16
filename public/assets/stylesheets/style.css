@@ -26,6 +26,7 @@ a.navbar-brand {
 }
 .nav-link {
   color: white;
+  font-size: 20px;
 }
 
 .navbar-toggler-icon {
@@ -69,6 +70,7 @@ nav {
 } */
 ul li {
   list-style: none;
+  font-size: 20px;
 }
 .pics {
   height: 300px;

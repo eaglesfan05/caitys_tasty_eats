@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            padding: 0 50px;
+        }
+        .menu-row{
+            display: flex;
+            justify-content: space-around;
+            /* text-align: left; */
+            padding: 40px 0;
+            border-bottom: 1px solid black;
+        }
+        .new {
+            color: #FD0196;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            /* line-height: 1; */
+        }
+.menu-column {
+    display:flex;
+    align-items: center;
+}
+   .title {
+       width: 40%;
+   }   
+   .price {
+       width: 30%;
+   }
+   .add-item {
+       /* width: 30%; */
+       background-color: blue;
+       border: none;
+       height: 70px;
+      justify-content: center;
+      color: white;
+      font-style: italic;
+      margin: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)
+   }
+  #comfort {
+      display: none;
+  }
+
+  .menu-section {
+     padding: 30px 0;
+     border-bottom: 1px solid black;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Check Out my Menu!</h1>
+        <div class="menu-section">
+            <h1 class="comfortFood" data-toggle="collapse" data-target="#comfort">Comfort Foods</h1>
+            <!-- <small>Sides not included</small> -->
+            <div class="collapse" id="comfort">
+                <div class="header">Sides Not Included</div>
+                <div class="menu-row collapse">
+                    <span class="title menu-column">Kielbasa Hash</span>
+                    <span class="price menu-column">$10</span>
+                    <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
+                </div>
+                <div class="menu-row">
+                    <span class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</span>
+                    <span class="price menu-column">$10</span>
+                    <button class="add-item menu-column" type="button">Add to cart</button>
+                </div>
+                <div class="menu-row">
+                    <span class="title menu-column"><span class="new">New </span> Chicken Tostadas</span>
+                    <span class="price menu-column">$10</span>
+                    <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
+                </div>
+            </div>
+           
+        </div>
+        <div class="menu-section">
+            <h1>Combos</h1>
+        </div>
+        <div class="menu-section">
+            <h1>Sides</h1>
+        </div>
+        <div class="menu-section">
+            <h1>Deserts</h1>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName('comfortFood');
+        var i;
+        for(i = 0; i < coll.length; i++) {
+            coll[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+                var content = this.nextElementSibling;
+                if(content.style.display === 'block') {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block"
+                }
+            })
+        }
+    </script>
+</body>
+</html>
