@@ -5,26 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .background {
+            background-image: url(/public/assets/images/beach-1852945_1920.jpg) ;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
         .menu {
-            padding: 0 50px;
+            padding: 20px 30px;
+            /* width: 100vw; */
+            background-color: rgba(255,255,255,0.5);
+            width: 80%;
+           
+            margin: 0 auto;
+           
         }
         .menu-row{
             display: flex;
-            justify-content: space-around;
-            /* text-align: left; */
-            padding: 40px 0;
+            justify-content: space-around;        
+            padding: 20px 0;
             border-bottom: 1px solid black;
+            margin-top: 0;
+            align-items: center;
         }
         .new {
             color: #FD0196;
             font-weight: bold;
             font-size: 20px;
             text-transform: uppercase;
-            /* line-height: 1; */
+            padding-right: 0.5em;          
         }
 .menu-column {
-    display:flex;
-    align-items: center;
+ 
+   
 }
    .title {
        width: 40%;
@@ -57,57 +76,132 @@
     cursor: pointer;
     display: inline-block;
     border-radius: 25px;
-    background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)
+    /* background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%); */
+    background-image: linear-gradient(#f8049c, #fdd54f);
    }
   #comfort {
       display: none;
   }
 
   .menu-section {
-     padding: 30px 0;
-     border-bottom: 1px solid black;
+     /* padding: 30px 0; */
+     /* border-bottom: 1px solid black; */
+     /* max-height: 0;
+    overflow: hidden;
+    transition:  max-height 0.2s ease-out; */
+    align-items: center;
   }
 
+  h1 {
+      
+  }
+
+  .menu-header {
+      text-align: center;
+      font-size:7vh;
+      font-style: italic;
+      font-weight: bold;
+        text-decoration: underline;
+      margin-bottom: 0;
+      /* color: white; */
+  }
+  .menu-section-header {
+      /* background-color: rgb(135,206,250); */
+      background-image: linear-gradient(100deg,#f8049c, #fdd54f);
+      padding: 30px 10px;
+      margin: 10px 0;
+      color: white;
+      font-style: italic;
+  }
+  .menu-section-header:hover {
+    /* font-weight: bold; */
+    cursor: pointer;
+  }
+  
+  .menu-items {
+      /* color: white; */
+      font-size:20px;
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .disclaimer {
+    text-align: center;
+    font-size: 25px;
+    /* text-decoration: underline; */
+    padding: 10px;
+  }
+
+  /* media queries */
+  @media screen and (max-width: 815px) {
+  .menu-header {
+      font-size: 4vw;
+  }
+  .menu-column {
+      width: 50%;
+  }
+
+  }
     </style>
 </head>
 <body>
-    <div class="menu">
-        <h1>Check Out my Menu!</h1>
-        <div class="menu-section">
-            <h1 class="comfortFood" data-toggle="collapse" data-target="#comfort">Comfort Foods</h1>
-            <!-- <small>Sides not included</small> -->
-            <div class="collapse" id="comfort">
-                <div class="header">Sides Not Included</div>
-                <div class="menu-row collapse">
-                    <span class="title menu-column">Kielbasa Hash</span>
-                    <span class="price menu-column">$10</span>
-                    <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
-                </div>
-                <div class="menu-row">
-                    <span class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</span>
-                    <span class="price menu-column">$10</span>
-                    <button class="add-item menu-column" type="button">Add to cart</button>
-                </div>
-                <div class="menu-row">
-                    <span class="title menu-column"><span class="new">New </span> Chicken Tostadas</span>
-                    <span class="price menu-column">$10</span>
-                    <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
-                </div>
+    <div class="background">
+        <div class="menu">
+            <div class="menu-header"><h1>Check Out my Menu!</h1>
+    
             </div>
            
-        </div>
-        <div class="menu-section">
-            <h1>Combos</h1>
-        </div>
-        <div class="menu-section">
-            <h1>Sides</h1>
-        </div>
-        <div class="menu-section">
-            <h1>Deserts</h1>
+            <div class="menu-section">
+                <div class="menu-section-header">
+                    <h1 class="comfortFood" data-toggle="collapse" data-target="#comfort">Comfort Foods</h1>
+                </div>
+             
+                <!-- <small>Sides not included</small> -->
+                <div class="menu-items collapse" id="comfort">
+                    <div class="disclaimer">Sides Not Included</div>
+                    <hr>
+                    <div class="menu-row collapse">
+                        <span class="title menu-column">Kielbasa Hash</span>
+                        <span class="price menu-column">$10</span>
+                        <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
+                    </div>
+                    <div class="menu-row">
+                        <span class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</span>
+                        <span class="price menu-column">$10</span>
+                        <button class="add-item menu-column" type="button">Add to cart</button>
+                    </div>
+                    <div class="menu-row">
+                        <span class="title menu-column"><span class="new">New </span> Chicken Tostadas</span>
+                        <span class="price menu-column">$10</span>
+                        <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="menu-section">
+                <div class="menu-section-header">
+                    <h1>Combos</h1>
+                </div>
+                
+            </div>
+            <div class="menu-section">
+                <div class="menu-section-header">
+                    <h1>Sides</h1>
+                </div>
+               
+            </div>
+            <div class="menu-section">
+                <div class="menu-section-header">
+                    <h1>Deserts</h1>
+                </div>
+              
+            </div>
         </div>
     </div>
+    
     <script>
-        var coll = document.getElementsByClassName('comfortFood');
+        var coll = document.getElementsByClassName('menu-section-header');
         var i;
         for(i = 0; i < coll.length; i++) {
             coll[i].addEventListener('click', function() {
@@ -118,6 +212,11 @@
                 } else {
                     content.style.display = "block"
                 }
+    //             if (content.style.maxHeight){
+    //   content.style.maxHeight = null;
+    // } else {
+    //   content.style.maxHeight = content.scrollHeight + "px";
+    // } 
             })
         }
     </script>
