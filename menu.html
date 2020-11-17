@@ -19,17 +19,18 @@
         }
         .menu {
             padding: 20px 30px;
-            /* width: 100vw; */
+           position: relative;
             background-color: rgba(255,255,255,0.5);
-            width: 80%;
+            width: 90%;
            
             margin: 0 auto;
            
         }
         .menu-row{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;        
-            padding: 20px 0;
+            padding: 10px 0;
             border-bottom: 1px solid black;
             margin-top: 0;
             align-items: center;
@@ -41,10 +42,7 @@
             text-transform: uppercase;
             padding-right: 0.5em;          
         }
-.menu-column {
- 
-   
-}
+
    .title {
        width: 40%;
    }   
@@ -76,7 +74,6 @@
     cursor: pointer;
     display: inline-block;
     border-radius: 25px;
-    /* background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%); */
     background-image: linear-gradient(#f8049c, #fdd54f);
    }
   #comfort {
@@ -134,14 +131,19 @@
   }
 
   /* media queries */
-  @media screen and (max-width: 815px) {
+  @media screen and (max-width: 1174px) {
   .menu-header {
       font-size: 4vw;
   }
-  .menu-column {
-      width: 50%;
-  }
+ .menu-column {
+     width: 40%;
+     font-size: 24px;
+ }
+ .add-item {
+     width: 100vw;
+     padding: 10px;
 
+ }
   }
     </style>
 </head>
@@ -161,9 +163,9 @@
                 <div class="menu-items collapse" id="comfort">
                     <div class="disclaimer">Sides Not Included</div>
                     <hr>
-                    <div class="menu-row collapse">
-                        <span class="title menu-column">Kielbasa Hash</span>
-                        <span class="price menu-column">$10</span>
+                    <div class="menu-row">
+                        <div class="title menu-column">Kielbasa Hash</div>
+                        <div class="price menu-column">$10</div>
                         <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
                     </div>
                     <div class="menu-row">
