@@ -11,6 +11,8 @@
             box-sizing: border-box;
         }
         .background {
+            /* height:auto; */
+            position: relative;
             background-image: url(/public/assets/images/beach-1852945_1920.jpg) ;
             background-position: center center;
             background-repeat: no-repeat;
@@ -51,7 +53,7 @@
    }
    .add-item {
        /* width: 30%; */
-       background-color: blue;
+       /* background-color: blue; */
        border: none;
        height: 70px;
       justify-content: center;
@@ -76,7 +78,7 @@
     border-radius: 25px;
     background-image: linear-gradient(#f8049c, #fdd54f);
    }
-  #comfort {
+  #comfort, #combos {
       display: none;
   }
 
@@ -87,10 +89,6 @@
     overflow: hidden;
     transition:  max-height 0.2s ease-out; */
     align-items: center;
-  }
-
-  h1 {
-      
   }
 
   .menu-header {
@@ -111,7 +109,6 @@
       font-style: italic;
   }
   .menu-section-header:hover {
-    /* font-weight: bold; */
     cursor: pointer;
   }
   
@@ -128,6 +125,7 @@
     font-size: 25px;
     /* text-decoration: underline; */
     padding: 10px;
+    text-transform: uppercase;
   }
 
   /* media queries */
@@ -135,7 +133,7 @@
   .menu-header {
       font-size: 4vw;
   }
- .menu-column {
+  .menu-column {
      width: 40%;
      font-size: 24px;
  }
@@ -144,19 +142,111 @@
      padding: 10px;
 
  }
+ .combo-sides {
+     width: 200px;
+     margin: 0;
+     margin-top: 20px;
+ }
   }
+
+  #side-options {
+      position: absolute;
+      /* border: 1px solid black; */
+      height: 400px;
+      width: 70%;
+    top: 150px;
+    left: 15%;
+    background: white;
+    z-index: 4;
+    /* display: none; */
+    padding: 20px;
+    /* box-shadow: 5px, 5px black; */
+    border: 1px solid black;
+  } 
+  .cancel {
+    border: none;
+       height: 70px;
+      justify-content: center;
+      color: white;
+      font-style: italic;
+      margin: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    background-image: linear-gradient(red,  #fdd54f )
+  }
+  
     </style>
 </head>
 <body>
     <div class="background">
+        <div id="side-options">
+            <div class="sides-choice-header">
+                <h1>Please choose your sides</h1>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="pick-sides">
+                <!-- white rice blackbeans seasoned broccoli cinnamon sugar sweet potatoes-->
+                <h2>First Side</h2>
+                <input type="radio" id="mac-and-cheese" name="first-choice" value="Baked Mac And Cheese">
+                <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                <input type="radio" id="smashed-red-potatoes" name="first-choice" value="Smashed Red Potatoes">
+                <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                <input type="radio" id="jallof-rice" name="first-choice" value="Jallof Rice">
+                <label for="jallof-rice">Jallof Rice</label>
+                <input type="radio" id="white-rice" name="first-choice" value="White Rice">
+                <label for="white-rice">White Rice</label>
+                <input type="radio" id="black-beans" name="first-choice" value="Black Beans">
+                <label for="black-beans">Black Beans</label>
+                <input type="radio" id="cinnamon-sweet-potatoes" name="first-choice" value="Cinnamon Sweet Potatoes">
+                <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                <br>
+                <hr>
+                <br>
+                <h2>Second Side</h2>
+                <input type="radio" id="mac-and-cheese" name="second-choice" value="Baked Mac And Cheese">
+                <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                <input type="radio" id="smashed-red-potatoes" name="second-choice" value="Smashed Red Potatoes">
+                <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                <input type="radio" id="jallof-rice" name="second-choice" value="Jallof Rice">
+                <label for="jallof-rice">Jallof Rice</label>
+                <input type="radio" id="white-rice" name="second-choice" value="White Rice">
+                <label for="white-rice">White Rice</label>
+                <input type="radio" id="black-beans" name="second-choice" value="Black Beans">
+                <label for="black-beans">Black Beans</label>
+                <input type="radio" id="cinnamon-sweet-potatoes" name="second-choice" value="Cinnamon Sweet Potatoes">
+                <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+            </div>
+            <div class="btn-group">
+                <button class="add-item combo-sides">Add to Order</button>
+                <button class="cancel combo-sides">Cancel</button>
+            </div>
+           
+        </div>
         <div class="menu">
+           
             <div class="menu-header"><h1>Check Out my Menu!</h1>
     
             </div>
            
             <div class="menu-section">
-                <div class="menu-section-header">
-                    <h1 class="comfortFood" data-toggle="collapse" data-target="#comfort">Comfort Foods</h1>
+                <div class="menu-section-header" data-toggle="collapse" data-target="#comfort">
+                    <h1 class="comfortFood" >Comfort Foods</h1>
                 </div>
              
                 <!-- <small>Sides not included</small> -->
@@ -169,23 +259,49 @@
                         <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
                     </div>
                     <div class="menu-row">
-                        <span class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</span>
-                        <span class="price menu-column">$10</span>
+                        <div class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</div>
+                        <div class="price menu-column">$10</div>
                         <button class="add-item menu-column" type="button">Add to cart</button>
                     </div>
                     <div class="menu-row">
-                        <span class="title menu-column"><span class="new">New </span> Chicken Tostadas</span>
-                        <span class="price menu-column">$10</span>
+                        <div class="title menu-column"><span class="new">New </span> Chicken Tostadas</div>
+                        <div class="price menu-column">$10</div>
                         <button class="btn btn-primary add-item menu-column" type="button">Add to cart</button>
                     </div>
                 </div>
                
             </div>
             <div class="menu-section">
-                <div class="menu-section-header">
+              
+                <div class="menu-section-header" data-toggle="collapse" data-target="#combos">
                     <h1>Combos</h1>
                 </div>
-                
+          
+                <div class="menu-items collapse" id="combos">
+                    <div class="disclaimer">2 Sides included</div>
+                    <hr>
+                   <div class="menu-row">
+                       <span class="title menu-column">
+                    Quarter Chicken
+                       </span>
+                       <span class="price menu-column">$10</span>
+                       <button class="btn btn-primary add-item menu-column combo" type="button">Add to cart</button>
+                   </div>
+                   <div class="menu-row">
+                    <span class="title menu-column">
+                     Blackened Salmon   
+                    </span>
+                    <span class="price menu-column">$10</span>
+                    <button class="btn btn-primary add-item menu-column combo" type="button">Add to cart</button>
+                </div>
+                <div class="menu-row">
+                    <span class="title menu-column">
+                     Sazon Shrimp  
+                    </span>
+                    <span class="price menu-column">$10</span>
+                    <button class="btn btn-primary add-item menu-column combo" type="button">Add to cart</button>
+                </div>
+                </div>
             </div>
             <div class="menu-section">
                 <div class="menu-section-header">
@@ -207,18 +323,30 @@
         var i;
         for(i = 0; i < coll.length; i++) {
             coll[i].addEventListener('click', function() {
-                this.classList.toggle('active');
+                // this.classList.toggle('active');
                 var content = this.nextElementSibling;
                 if(content.style.display === 'block') {
                     content.style.display = "none";
                 } else {
                     content.style.display = "block"
                 }
-    //             if (content.style.maxHeight){
-    //   content.style.maxHeight = null;
-    // } else {
-    //   content.style.maxHeight = content.scrollHeight + "px";
-    // } 
+   
+            })
+        }
+        var comboButtons = document.getElementsByClassName('combo');
+        var i;
+        for(i = 0; i< comboButtons.length; i++) {
+            comboButtons[i].addEventListener('click', function() {
+                // alert('click')
+                document.getElementById('side-options').style.display = 'block';
+            }) 
+        }
+
+        var closeSideChoices = document.getElementsByClassName('combo-sides');
+        var i;
+        for(i = 0; i< closeSideChoices.length; i++) {
+            closeSideChoices[i].addEventListener('click', function() {
+                document.getElementById('side-options').style.display = 'none'
             })
         }
     </script>
