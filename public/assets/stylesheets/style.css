@@ -142,7 +142,7 @@ button:hover {
 .background {
   /* height:auto; */
   position: relative;
-  background-image: url(/public/assets/images/beach-1852945_1920.jpg);
+  background-image: url(../images/beach-1852945_1920.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
