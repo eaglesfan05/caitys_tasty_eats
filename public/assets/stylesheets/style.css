@@ -253,7 +253,10 @@ button:hover {
   margin-bottom: 0;
 }
 .menu-section-header {
-  background-image: linear-gradient(#f8049c, #fdd54f);
+  background-image: linear-gradient(
+    rgba(248, 4, 156, 1),
+    rgba(253, 213, 79, 1)
+  );
   padding: 30px 10px;
   color: white;
   font-style: italic;
@@ -263,11 +266,14 @@ button:hover {
   width: 100%;
   margin: 10px;
 }
-/* .menu-section:last-of-type {
-border-bottom: none;
-} */
+
 .menu-section-header:hover {
   cursor: pointer;
+  background-image: linear-gradient(
+    rgba(248, 4, 156, 0.7),
+    rgba(253, 213, 79, 0.7)
+  );
+  /* font-weight: bold; */
 }
 
 .menu-items {
