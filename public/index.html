@@ -67,7 +67,7 @@
 
       <!-- Brand, Home, Food, Place your Order, Contact -->
       <!-- Image quick about -->
-      <div class="background">
+      <div class="main-background">
         <div class="container">
           <div class="main" id="main">
             <div class="image-holder">
@@ -193,9 +193,9 @@
       <!-- TODO -->
       <!-- Turn this whole menu into a card with tabs that you can click for different types of food. Each has button to add item to order. Order will build with items added and add up price in email. email sent will be built order with contact info and order to caitys email -->
       <div class="container">
-        <div id="menu" class="accordion">
-          <div class="card">
-            <form id="orderForm">
+        <div id="menu">
+         
+            <!-- <form id="orderForm">
               <div class="form-group">
                 <div class="header">
                   <h1>Check Out My Current Menu and Place Your Order!</h1>
@@ -441,8 +441,7 @@
                     >
                       $5 Deserts
                     </h2>
-                    <!-- Banana Pudding. S'mores To-Go. Chocolate Ribbon Pie. Mixed
-                    Berries Shortcake. -->
+                    
                     <div id="collapseFour" class="collapse">
                       <div class="form-check form-check-inline">
                         <input
@@ -504,7 +503,198 @@
                   </button>
                 </div>
               </div>
-            </form>
+            </form> -->
+            <div class="background">
+              <div id="side-options">
+                  <div class="sides-choice-header">
+                      <h1>Please choose your sides</h1>
+                  </div>
+                  <br>
+                  <hr>
+                  <br>
+                  <div id="pick-sides">
+                      <!-- white rice blackbeans seasoned broccoli cinnamon sugar sweet potatoes-->
+                      <h2>First Side</h2>
+                      <input type="radio" id="mac-and-cheese" name="first-choice" value="Baked Mac And Cheese">
+                      <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                      <input type="radio" id="smashed-red-potatoes" name="first-choice" value="Smashed Red Potatoes">
+                      <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                      <input type="radio" id="jallof-rice" name="first-choice" value="Jallof Rice">
+                      <label for="jallof-rice">Jallof Rice</label>
+                      <input type="radio" id="white-rice" name="first-choice" value="White Rice">
+                      <label for="white-rice">White Rice</label>
+                      <input type="radio" id="black-beans" name="first-choice" value="Black Beans">
+                      <label for="black-beans">Black Beans</label>
+                      <input type="radio" id="cinnamon-sweet-potatoes" name="first-choice" value="Cinnamon Sweet Potatoes">
+                      <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                      <br>
+                      <hr>
+                      <br>
+                      <h2>Second Side</h2>
+                      <input type="radio" id="mac-and-cheese" name="second-choice" value="Baked Mac And Cheese">
+                      <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                      <input type="radio" id="smashed-red-potatoes" name="second-choice" value="Smashed Red Potatoes">
+                      <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                      <input type="radio" id="jallof-rice" name="second-choice" value="Jallof Rice">
+                      <label for="jallof-rice">Jallof Rice</label>
+                      <input type="radio" id="white-rice" name="second-choice" value="White Rice">
+                      <label for="white-rice">White Rice</label>
+                      <input type="radio" id="black-beans" name="second-choice" value="Black Beans">
+                      <label for="black-beans">Black Beans</label>
+                      <input type="radio" id="cinnamon-sweet-potatoes" name="second-choice" value="Cinnamon Sweet Potatoes">
+                      <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                  </div>
+                  <div class="btn-group">
+                      <button class="add-item combo-sides">Add to Order</button>
+                      <button class="cancel combo-sides">Cancel</button>
+                  </div>
+                 
+              </div>
+              <div class="menu accordion" id="menu">
+                 
+                  <div class="menu-header"><h1>Check Out my Menu!</h1>
+          
+                  </div>
+                 
+                  <div class="menu-section">
+                      <div class="menu-section-header" data-toggle="collapse" data-target="#comfort">
+                          <h1 class="comfortFood" >Comfort Foods</h1>
+                      </div>
+                   
+                      <!-- <small>Sides not included</small> -->
+                      <div class="menu-items collapse" id="comfort">
+                          <div class="disclaimer">Sides Not Included</div>
+                          <hr>
+                          <div class="menu-row">
+                              <div class="title menu-column">Kielbasa Hash</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column"><span class="new">New </span> Chicken Tostadas</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                      </div>
+                     
+                  </div>
+                  <div class="menu-section">
+                    
+                      <div class="menu-section-header" data-toggle="collapse" data-target="#combos">
+                          <h1>Combos</h1>
+                      </div>
+                
+                      <div class="menu-items collapse" id="combos">
+                          <div class="disclaimer">2 Sides included</div>
+                          <hr>
+                         <div class="menu-row">
+                             <span class="title menu-column">
+                          Quarter Chicken
+                             </span>
+                             <span class="price menu-column">$10</span>
+                             <button class="btn btn-primary add-item menu-column combo" type="button">Add to Order</button>
+                         </div>
+                         <div class="menu-row">
+                          <span class="title menu-column">
+                           Blackened Salmon   
+                          </span>
+                          <span class="price menu-column">$10</span>
+                          <button class="btn btn-primary add-item menu-column combo" type="button">Add to Order</button>
+                      </div>
+                      <div class="menu-row">
+                          <span class="title menu-column">
+                           Sazon Shrimp  
+                          </span>
+                          <span class="price menu-column">$10</span>
+                          <button class="btn btn-primary add-item menu-column combo" type="button">Add to Order</button>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="menu-section">
+                      <div class="menu-section-header">
+                          <h1>Sides</h1>
+                      </div>
+                    
+                         <div class="menu-items" id="side">
+                          <div class="menu-row">
+                              <div class="title menu-column">Baked Mac and Cheese</div>
+                              <div class="price menu-column">$2</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">Smashed Red Potatoes</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">Jallof Rice</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">White Rice</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">Black Beans</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">Seasoned Broccoli</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">Cinnamon Sugar Sweet Potatoes</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <hr>
+                    
+                         </div>             
+                    
+                  </div>
+                  <div class="menu-section">
+                      <div class="menu-section-header">
+                          <h1>Deserts</h1>
+                      </div>
+                  
+                        <div class="menu-items" id="desert">
+                          <div class="menu-row">
+                              <div class="title menu-column">
+                                  Banana Pudding
+                              </div>
+                              <div class="price menu-column">$4</div>
+                              <button class="btn btn-primary add-item menu-column">Add to Order</button>
+                              </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">S'mores To-Go</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">Chocolate Ribbon Pie</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>
+                          <div class="menu-row">
+                              <div class="title menu-column">Mixed Berry Shortcake</div>
+                              <div class="price menu-column">$10</div>
+                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                          </div>                    
+                        </div>   
+                  
+                  </div>
+              </div>
+             
+       
           </div>
         </div>
       </div>
@@ -607,6 +797,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/scripts/index.js"></script>
+    <script src="./assets/scripts/ind.js"></script>
   </body>
 </html>
