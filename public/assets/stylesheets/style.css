@@ -289,25 +289,24 @@ button:hover {
 /* TODO */
 /* UNCOMMENT MEDIA QUERIES */
 /* media queries */
-/* @media screen and (max-width: 1174px) {
-.menu-header {
-font-size: 4vw;
+@media screen and (max-width: 1174px) {
+  .menu-header {
+    font-size: 4vw;
+  }
+  .menu-column {
+    width: 40%;
+    font-size: 24px;
+  }
+  .add-item {
+    width: 100vw;
+    padding: 10px;
+  }
+  .combo-sides {
+    width: 200px;
+    margin: 0;
+    margin-top: 20px;
+  }
 }
-.menu-column {
-width: 40%;
-font-size: 24px;
-}
-.add-item {
-width: 100vw;
-padding: 10px;
-
-}
-.combo-sides {
-width: 200px;
-margin: 0;
-margin-top: 20px;
-}
-} */
 
 #side-options {
   position: absolute;
