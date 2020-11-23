@@ -76,8 +76,15 @@ ul li {
   margin: 0 auto;
 }
 
+#food > h1,
+#menu .menu-header > h1 {
+  font-size: 7vw;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 #food {
-  padding-top: 80px;
   text-align: center;
   text-shadow: 1px 1px 0 #000;
 }
@@ -99,8 +106,6 @@ ul li {
   margin: 5px;
 }
 .food img {
-  /* margin: 5px; */
-
   height: 100%;
   width: 100%;
 }
@@ -125,10 +130,6 @@ h1 {
 
 h2 {
   text-align: center;
-}
-
-.card {
-  border: none;
 }
 
 button:hover {
@@ -168,9 +169,6 @@ button:hover {
     " b b b b"
     " c c c c"
     " d d d d";
-  /* background-image: url(./public/assets/images/usethis.jpg);
-  background-size: cover;  
-  background-attachment: fixed;                  */
 }
 .one {
   grid-area: a;
@@ -255,15 +253,13 @@ button:hover {
   margin-bottom: 0;
 }
 .menu-section-header {
-  background-image: linear-gradient(100deg, #f8049c, #fdd54f);
+  background-image: linear-gradient(#f8049c, #fdd54f);
   padding: 30px 10px;
   color: white;
   font-style: italic;
   background-position: 40%;
 }
 .menu-section {
-  /* border-bottom: 10px solid white; */
-  /* height: 100px; */
   width: 100%;
   margin: 10px;
 }
@@ -318,7 +314,7 @@ margin-top: 20px;
   left: 15%;
   background: white;
   z-index: 4;
-  /* display: none; */
+  display: none;
   padding: 20px;
   border: 1px solid black;
 }
