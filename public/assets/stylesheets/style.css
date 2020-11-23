@@ -93,18 +93,15 @@ ul li {
   margin-top: 80px;
 }
 .food {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
+  text-align: center;
 }
-.holder {
-  flex: 1;
-  min-width: 200px;
-  max-width: 300px;
-  margin: 5px;
-}
+
 .food img {
   height: 100%;
   width: 100%;
