@@ -26,6 +26,7 @@
       src="https://kit.fontawesome.com/e045211231.js"
       crossorigin="anonymous"
     ></script>
+    
   </head>
   <body data-spy="scroll" data-target="#scroll" offset="10">
     <!-- Nav bar -->
@@ -64,8 +65,11 @@
           </ul>
         </div>
       </nav>
-
-      <!-- Brand, Home, Food, Place your Order, Contact -->
+<!-- scroll top button -->
+<div class="scroll-top">
+  <label class="sr-only">Scroll To Top</label>
+  <a href="#" id="scroll-top"><i class="fas fa-arrow-up"></i></a>
+</div>
       <!-- Image quick about -->
       <div class="main-background">
         <div >
@@ -157,28 +161,7 @@
               <img
                 src="./assets/images/120116487_616705925640186_2113775896055690990_n.jpg"
               />
-            </div>
-            <!-- <div class="holder">
-              <img
-                src="./assets/images/120948310_368038247676646_5009874799288341265_n.jpg"
-              />
-            </div> -->
-<!-- 
-            <div class="holder">
-              <img
-              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-            />
-            </div>
-             <div class="holder">
-              <img
-              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-            />
-             </div>
-             <div class="holder">
-              <img
-              src="./assets/images/120073835_622498431990564_424171886296525130_n.jpg"
-            />
-             </div> -->
+            </div>           
           </div> 
           </div>
         </div>
@@ -268,7 +251,7 @@
                           </div>
                       </div>
                      
-                  </>
+                  </div>
                   <div class="menu-section">
                     
                       <div class="menu-section-header" data-toggle="collapse" data-target="#combos">
@@ -375,24 +358,11 @@
                               <div class="price menu-column">$10</div>
                               <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
                           </div>                    
-                        </div>   
-                  
+                        </div>                   
                   </div>
-              </div>
-             
-       
+              </div>       
           </div>
         </div>
-      </div>
-
-      <!-- Order -->
-      <div class="order">
-        <!-- Name -->
-        <!-- Contact ie phone/email -->
-        <!-- Order -->
-        <!-- Message or note -->
-        <!-- Back to menu button to edit order -->
-        <!-- Submit -->
       </div>
       <!-- contact -->
 
@@ -401,51 +371,7 @@
       <!-- message -->
       <!-- submit -->
       <!-- social media links -->
-      <div >
-        <div class="contact" id="order">
-          <!-- <form id="orderForm">
-            <div class="form-group">
-              <label for="name">Who Are You?</label>
-              <input
-                type="text"
-                class="form-control"
-                name="name"
-                value="Enter your name"
-                id="name"
-              />
-            </div>
-            <div class="form-group">
-              <label for="info">Best Way To Get In Touch</label>
-              <input
-                type="text"
-                class="form-control"
-                name="info"
-                value="Enter either your number or email"
-                id="info"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message"
-                >Contact Me with Questions/ Review Your Order</label
-              >
-              <br />
-              <textarea id="orderHere" class="form-control"></textarea>
-            </div>
-         
-            <div class="buttons">
-              <div class="btn-group" role="group">
-                <a class="btn btn-primary custom" href="#menu">
-                  Edit Your Order
-                </a>
-                <button class="btn btn-success custom" id="sendOrder" type="submit">
-                  Send
-                </button>
-              </div>
-            </div>
-          </form> -->
-        </div>
-      </div>
-    </div>
+      
 
     <!-- fte -->
     
@@ -458,7 +384,7 @@
         <input type="hidden" name="user_id" value="YKXQMB7R4OXW367DPDRO">
         <input type="hidden" name="form_id" value="1">
         Name: <br><input type="text" name="name" placeholder="Enter your name...">
-        Email or Phone Number: <br><input type="text" name="email" placeholder="name@example.com">
+        Email: <br><input type="text" name="email" placeholder="name@example.com">
         Order: <br><textarea id="orderHere" name="comments" rows="5" placeholder="Start your order..."></textarea>
         <input type="submit" value="Place Order"> <span class="credit">Created with <a href="https://formtoemail.com" rel="nofollow"
           >FormToEmail</a></span>
@@ -484,5 +410,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/scripts/ind.js"></script>
-  </body>
+    </body>
 </html>
