@@ -38,7 +38,7 @@ for(i = 0; i < addButtonClicked.length; i++){
         var comfortItem = button.parentElement;
         var title = comfortItem.getElementsByClassName('title')[0].innerText       
         var price = comfortItem.getElementsByClassName('price')[0].innerText
-        alert(title + " " + price)
+        // alert(title + " " + price)
         addItemToCart(title, price)
         // get the element clicked
         // get the value of the title, price
