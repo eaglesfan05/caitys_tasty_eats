@@ -93,9 +93,9 @@ ul li {
   margin: 0 auto;
 }
 
-#contactpage {
+/* #contactpage {
   margin-top: 80px;
-}
+} */
 .food {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -432,7 +432,7 @@ form.fte .fte-ckrad {
 }
 form.fte {
   max-width: 600px;
-  padding: 0;
+  padding: 10px;
   margin: 2em auto;
 }
 form.fte input,
