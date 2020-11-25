@@ -308,7 +308,7 @@ button:hover {
 }
 .menu-section {
   width: 100%;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .menu-section-header:hover {
@@ -337,9 +337,9 @@ button:hover {
 /* UNCOMMENT MEDIA QUERIES */
 /* media queries */
 @media screen and (max-width: 1174px) {
-  .menu-header {
+  /* .menu-header {
     font-size: 4vw;
-  }
+  } */
   .menu-column {
     width: 40%;
     font-size: 24px;
@@ -352,6 +352,29 @@ button:hover {
     width: 200px;
     margin: 0;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .menu {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  #menu .menu-header > h1,
+  #food > h1 {
+    /* background-color: grey; */
+    font-size: 50px;
+  }
+  .pics {
+    width: 100%;
+    height: auto;
+  }
+  .main {
+    padding-top: 0px;
+  }
+
+  .hide-sm {
+    display: none;
   }
 }
 
