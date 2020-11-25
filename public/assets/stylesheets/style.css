@@ -416,6 +416,23 @@ button:hover {
   background-image: linear-gradient(red, #fdd54f);
 }
 
+.footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    rgba(248, 4, 156, 1),
+    rgba(253, 213, 79, 1)
+  );
+}
+
+.fab {
+  margin: 10px;
+  font-size: 40px;
+  color: white;
+}
 form.fte,
 form.fte input,
 form.fte textarea,
