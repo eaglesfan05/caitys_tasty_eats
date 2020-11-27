@@ -34,7 +34,7 @@ for(i = 0; i< closeSideChoices.length; i++) {
 
 
 
-
+var order = ''
 var item = ''
 
 var comboItem = ''
@@ -96,9 +96,9 @@ function buildOrder(item, combo) {
         
     })
     // console.log("item: " + item + " first: " + firstChoice + " second: " + secondChoice)
-    // order += item + firstChoice + secondChoice
-    // order = order.substring(0, order.length -1)
-    // $('#orderHere').val(order)
+    order += item + comboItem
+    order = order.substring(0, order.length -1)
+    $('#orderHere').val(order)
 
 
 
