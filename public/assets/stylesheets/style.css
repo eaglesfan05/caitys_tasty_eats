@@ -243,17 +243,25 @@ button:hover {
 .price {
   width: 30%;
 }
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+}
 .add-item {
   border: none;
   height: 70px;
+  display: flex;
+  align-items: center;
   justify-content: center;
   color: white;
   font-style: italic;
   margin: 10px;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
-  padding: 15px;
+  /* padding: 18px; */
   text-align: center;
+  /* padding-top: 18px; */
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
@@ -346,12 +354,15 @@ button:hover {
   }
   .add-item {
     width: 100vw;
-    padding: 10px;
+    padding: 18px;
   }
-  .combo-sides {
-    width: 200px;
+  /* .combo-sides {
+    width: 100vw;
     margin: 0;
     margin-top: 20px;
+  } */
+  button .cancel .combo-sides {
+    width: 100vw;
   }
 }
 
@@ -428,11 +439,17 @@ button:hover {
   );
 }
 
-.fab {
+.hide-from-view {
+  position: absolute;
+  left: 860px;
+  /* opacity: 0; */
+}
+
+/* .fab {
   margin: 10px;
   font-size: 40px;
   color: white;
-}
+} */
 form.fte,
 form.fte input,
 form.fte textarea,

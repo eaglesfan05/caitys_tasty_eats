@@ -209,7 +209,7 @@
                       <input type="radio" id="cinnamon-sweet-potatoes" name="second-choice" value="Cinnamon Sweet Potatoes">
                       <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
                   </div>
-                  <div class="btn-group">
+                  <div class="group">
                       <button class="add-item combo-sides">Add to Order</button>
                       <button class="cancel combo-sides">Cancel</button>
                   </div>
@@ -234,21 +234,30 @@
                           <div class="menu-row">
                               <div class="title menu-column">Kielbasa Hash</div>
                               <div class="price menu-column">$10</div>
-                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                              <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="kielbasa" 
+                                value="Kielbasa Hash"
+                                class="hide-from-view">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</div>
                               <div class="price menu-column">$10</div>
-                              <button class="add-item menu-column" type="button">Add to Order</button>
+                              <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="cajunPasta" 
+                                value="Chicken and Creamy Cajun Pasta"
+                                class="hide-from-view">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column"><span class="new">New </span> Chicken Tostadas</div>
                               <div class="price menu-column">$10</div>
-                              <button class="btn btn-primary add-item menu-column" type="button">Add to Order</button>
+                              
+                          
+                              <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="tostada" 
+                                value="Chicken Tostada"
+                                class="hide-from-view">Add to Order</label>
                           </div>
                       </div>
                      
                   </div>
+                  <!-- make menu choices radio buttons-->
                   <div class="menu-section">
                     
                       <div class="menu-section-header" data-toggle="collapse" data-target="#combos">
@@ -382,17 +391,20 @@
         <input type="hidden" name="form_id" value="1">
         Name: <br><input type="text" name="name" placeholder="Enter your name...">
         Email: <br><input type="text" name="email" placeholder="name@example.com">
-        Order: <br><textarea id="orderHere" name="comments" rows="5" placeholder="Start your order..."></textarea>
+        Order: <br>
+        
+        <!-- <div name = "comments" class="orderHere"></div> -->
+        <textarea id="orderHere" name="comments" rows="5" placeholder="Start your order..."></textarea>
         <input type="submit" value="Place Order"> <span class="credit">Created with <a href="https://formtoemail.com" rel="nofollow"
           >FormToEmail</a></span>
       </form>
     </div>
 
     <!-- footer -->
-    <div class="footer">
+    <div class="footer">   
       <div class="footer-content">
-        <a href=" #"><i class="fab fa-facebook-f"></i></a>
-        <a href=" #"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/CaitysTastyEats/" target="blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/caitystastyeats/" target="blank"><i class="fab fa-instagram"></i></a>
       </div>      
     </div>
 
