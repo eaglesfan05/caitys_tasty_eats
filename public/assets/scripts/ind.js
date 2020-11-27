@@ -1,4 +1,6 @@
-// const e = require("express");
+
+
+$(function() { 
 
 var coll = document.getElementsByClassName('menu-section-header');
 var i;
@@ -31,6 +33,47 @@ for(i = 0; i< closeSideChoices.length; i++) {
     })
 }
 
+
+$('.hide-from-view').click(function() {
+    var text = '';
+    $('.hide-from-view:checked').each(function() {
+        text += $(this).val() + ','
+    })
+
+    text =text.substring(0, text.length -1)
+    $('#orderHere').val(text)
+})
+
+// $('#orderButton').click(function(e) {
+//     e.preventDefault()
+  
+//     var order = [];
+//   $.each($('input[name="choices"]:checked'), () => {
+//       order.push($(this.val()))
+//       alert('order is ' + order.join(','))
+//   })
+//     // $('#orderHere').text(order)
+// })
+// get value of all checked buttons
+
+
+// let orderButton = document.getElementById('orderButton')
+// orderButton.addEventListener('click', function(e) {
+//    e.preventDefault();
+//    var order = []
+// const checkedButtons = document.querySelectorAll('input[name="choices"]:checked');
+// checkedButtons.forEach(function() {
+//     let selection = checkedButtons.values()
+//     console.log(selection)
+// })
+// })
+
+
+
+// checkedButtons.forEach((checkbox)=> {
+    // order.push(checkbox.value)
+    // console.log(order)
+// })
 // var addButtonClicked = document.getElementsByClassName('add-item')
 // var i;
 // for(i = 0; i < addButtonClicked.length; i++){
@@ -38,16 +81,16 @@ for(i = 0; i< closeSideChoices.length; i++) {
 //     button.addEventListener('click', addItemToCart)
 // }
 
-function addItemToCart(event) {
-    event.preventDefault()
-    var button = event.target;
-    var menuItem = button.parentElement;
-    var title = menuItem.getElementsByClassName('title')[0].innerText;
-    var price = menuItem.getElementsByClassName('price')[0].innerText;
+// function addItemToCart(event) {
+//     event.preventDefault()
+//     var button = event.target;
+//     var menuItem = button.parentElement;
+//     var title = menuItem.getElementsByClassName('title')[0].innerText;
+//     var price = menuItem.getElementsByClassName('price')[0].innerText;
 
-    addTextToMessage(title, price)
+//     addTextToMessage(title, price)
     
-}
+// }
 
 const addTextToMessage =(title, price) => {
 
@@ -133,19 +176,35 @@ localStorage.setItem("price", price);
 
 // }
 
+// let addItem = document.getElementsByClassName('add-item')
+// addItem.addEventListener('click',function() {
+//     alert('clicked')
+// })
 
+function checkThem() {
+    const checkboxes = document.getElementsByClassName('hide-from-view');
+    // for(var i; i< checkboxes.length; i++) {
+    //     checkboxes = checkboxes[i]
+    // }
+    checkboxes.addEventListener('change',(e)=> {
+        if(e.target.checked){
+            alert('checked')
+        } else {
+            alert('fuck')
+        }
 
-
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-let order = []
-
-for(var i; i < checkboxes.length; i++) {
-    checkboxes[i].addEventListener('click', addToMessage)
+    })
 }
 
+
+// let order = []
+
+// for(var i; i < checkboxes.length; i++) {
+//     checkboxes[i].addEventListener('click', addToMessage)
+// }
+
 function addToMessage(event) {
-    alert('checked')
+    // alert('checked')
 // let title = event.target.name;
 // console.log(title)
 }
@@ -171,4 +230,5 @@ window.addEventListener('scroll', () => {
     } else {
         toTop.classList.remove('active')
     }
+})
 })
