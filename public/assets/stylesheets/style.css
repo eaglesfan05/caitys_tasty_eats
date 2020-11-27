@@ -449,7 +449,7 @@ form {
 .hide-from-view {
   position: absolute;
   left: 860px;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 /* .fab {
