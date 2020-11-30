@@ -54,7 +54,7 @@ function buildOrder(item, combo) {
 
 
     $('.hide-from-view').click(function() {
-      
+     
         ;
         $('.hide-from-view:checked').each(function() {
             item += "Order Item:" + $(this).val() + " | "
@@ -65,12 +65,12 @@ function buildOrder(item, combo) {
     })
 
     $('.comboMeal').click(function() {
-      
+        combo = comboItem + firstChoice + secondChoice
         ;
         $('.comboMeal:checked').each(function() {
             comboItem += "Combo Item:" + $(this).val() + " | "
         })
-        buildOrder(comboItem)
+        // buildOrder(comboItem)
         // item =item.substring(0, item.length -1)
         // $('#orderHere').val(item)
     })
@@ -85,20 +85,21 @@ function buildOrder(item, combo) {
        
         $('.firstChoice:checked').each(function() {
             firstChoice+= "First Side: " + $(this).val()
-            buildOrder(firstChoice)
+            // buildOrder(firstChoice)
         })
         $('.secondChoice:checked').each(function() {
             secondChoice+= "Second Side: " + $(this).val()
-            buildOrder(secondChoice)
+            // buildOrder(secondChoice)
         })
         // text += firstChoice + " " +  secondChoice
         // text =text.substring(0, text.length -1)
         
     })
     // console.log("item: " + item + " first: " + firstChoice + " second: " + secondChoice)
-    order += item + comboItem
+    order = item + comboItem
     order = order.substring(0, order.length -1)
     $('#orderHere').val(order)
+    console.log("this is the order" + order)
 
 
 

@@ -210,7 +210,8 @@
                       <input type="radio" id="jallof-rice" name="second-choice" 
                       class="secondChoice" value="Jallof Rice">
                       <label for="jallof-rice">Jallof Rice</label>
-                      <input type="radio" id="white-rice" name="second-choice" value="White Rice">
+                      <input type="radio" id="white-rice" name="second-choice" 
+                      class="secondChoice" value="White Rice">
                       <label for="white-rice">White Rice</label>
                       <input type="radio" id="black-beans" name="second-choice"
                       class="secondChoice"  value="Black Beans">
@@ -221,7 +222,8 @@
                       <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
                   </div>
                   <div class="group">
-                      <button class="add-item add-combo combo-sides">Add to Order</button>
+                      <button class="add-item add-combo combo-sides"
+                      id="add-combo">Add to Order</button>
                       <button class="cancel combo-sides">Cancel</button>
                   </div>
                  
@@ -247,7 +249,7 @@
                               <div class="price menu-column">$10</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="kielbasa" 
                                 value="Kielbasa Hash"
-                                class="hide-from-view"
+                                class="add-item-to-order"
                                 >Add to Order</label>
                           </div>
                           <div class="menu-row">
@@ -255,7 +257,7 @@
                               <div class="price menu-column">$10</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="cajunPasta" 
                                 value="Chicken and Creamy Cajun Pasta"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column"><span class="new">New </span> Chicken Tostadas</div>
@@ -264,7 +266,7 @@
                           
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="tostada" 
                                 value="Chicken Tostada"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                       </div>
                      
@@ -323,49 +325,49 @@
                               <div class="price menu-column">$2</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="maccandCheese" 
                                 value="Baked Mac and Cheese"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">Smashed Red Potatoes</div>
                               <div class="price menu-column">$2</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="potatoes" 
                                 value="Smashed Red Potatoes"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">Jallof Rice</div>
                               <div class="price menu-column">$2</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="jallof" 
                                 value="Jallof Rice"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">White Rice</div>
                               <div class="price menu-column">$2</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="white-rice" 
                                 value="White Rice"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">Black Beans</div>
                               <div class="price menu-column">$2</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="blackbeans" 
                                 value="Black Beans"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">Seasoned Broccoli</div>
                               <div class="price menu-column">$2</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="broccoli" 
                                 value="Broccoli"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">Cinnamon Sugar Sweet Potatoes</div>
                               <div class="price menu-column">$2</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="sweetPotatoes" 
                                 value="Cinnamon Sugar Sweet Potatoes"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <hr>
                     
@@ -385,28 +387,28 @@
                               <div class="price menu-column">$4</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="banana" 
                                 value="Banana Pudding"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                               </div>
                           <div class="menu-row">
                               <div class="title menu-column">S'mores To-Go</div>
                               <div class="price menu-column">$4</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="smores" 
                                 value="S'mores To-Go"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">Chocolate Ribbon Pie</div>
                               <div class="price menu-column">$4</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="chocolatePie" 
                                 value="Chocolate Ribbon Pie"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">Mixed Berry Shortcake</div>
                               <div class="price menu-column">$4</div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="shortcake" 
                                 value="Mixed Berry Shortcake"
-                                class="hide-from-view">Add to Order</label>
+                                class="add-item-to-order">Add to Order</label>
                           </div>                    
                         </div>                   
                   </div>
@@ -475,6 +477,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/scripts/ind.js"></script>
+    <script src="./assets/scripts/three.js"></script>
     </body>
 </html>

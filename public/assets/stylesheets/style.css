@@ -446,7 +446,8 @@ form {
   );
 }
 
-.hide-from-view {
+.add-item-to-order,
+.comboMeal {
   position: absolute;
   left: 860px;
   opacity: 0;
