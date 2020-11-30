@@ -5,11 +5,9 @@ let meat;
 let firstSide;
 let secondSide;
 let price;
+let comboOrder;
 let combo = {
-    meat,
-    firstSide,
-    secondSide,
-    price
+   comboOrder
 }
 
 
@@ -99,21 +97,6 @@ for(var i = 0; i < addItemButton.length; i++) {
     })
 }
 
-// create event listener for add  combo buttons being clicked
-var addComboButton = $('#add-combo');
-for(var i = 0; i < addComboButton.length; i++) {
-    addComboButton[i].addEventListener('click', function() {
-        $('.firstChoice:checked').each(function() {
-            firstSide = $(this).val()
-        })
-        combo.firstSide = firstSide
-        $('.secondChoice:checked').each(function() {
-            secondSide = $(this).val()
-        })
-        combo.secondSide = secondSide
-        alert(combo.meat + combo.firstSide + combo.secondSide + combo.price)
-    })
-}
 
 // create event listener for add  meat buttons being clicked
 var addMeatButton = $('.comboMeal');
@@ -123,7 +106,9 @@ for(var i = 0; i <addMeatButton.length; i++) {
         let price;
         let comboOrder = {
             title,
-            price
+            price,
+            firstSide,
+            secondSide
         }
        
         let button = event.target
@@ -134,11 +119,32 @@ for(var i = 0; i <addMeatButton.length; i++) {
         price = meatClicked.getElementsByClassName('price')[0].innerText;
         comboOrder.price = "Combo price: " + price + "includes 2 sides: "
        console.log(comboOrder.title + comboOrder.price)
-       combo.meat = title
-       combo.price = price
-        orders.push(combo);
-        console.log(orders)
+        
+// create event listener for add  combo buttons being clicked
+var addComboButton = $('#add-combo');
+for(var i = 0; i < addComboButton.length; i++) {
+    addComboButton[i].addEventListener('click', function() {
+        $('.firstChoice:checked').each(function() {
+            firstSide = $(this).val()
+        })
+        comboOrder.firstSide = firstSide
+        $('.secondChoice:checked').each(function() {
+            secondSide = $(this).val()
+        })
+        comboOrder.secondSide = secondSide
+        alert(comboOrder.title + " " + comboOrder.firstSide + " " + comboOrder.secondSide + " " + comboOrder.price)
     })
 }
+       orders.push(comboOrder)
 
+       console.log(orders)
+    })
+}
+// for (var i in orders) {
+//     console.log('Order Item: ' + i) 
+//         for(j in orders[i]) {
+//             console.log(orders[i][j])
+        
+//     }
+// }
 })
