@@ -261,7 +261,7 @@ form {
   justify-content: center;
   color: white;
   font-style: italic;
-  margin: 10px;
+  margin: 10px 0px;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
   /* padding: 18px; */
@@ -362,6 +362,10 @@ form {
   .add-combo {
     width: 100vw;
     padding: 18px;
+    /* font-size: 18px; */
+  }
+  #add-combo {
+    font-size: 18px;
   }
   /* .combo-sides {
     width: 100vw;
