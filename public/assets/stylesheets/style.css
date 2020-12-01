@@ -453,7 +453,7 @@ form {
 .add-item-to-order,
 .comboMeal {
   position: absolute;
-  left: 860px;
+  left: 80%;
   opacity: 0;
 }
 
