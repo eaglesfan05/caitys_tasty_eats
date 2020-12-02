@@ -81,5 +81,5 @@ $(document).ready(function () {
   //   location.reload()
   // }, 1000)
   // })
-  
+
 });

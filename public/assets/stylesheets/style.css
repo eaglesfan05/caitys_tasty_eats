@@ -172,11 +172,7 @@ button:hover {
 }
 
 /* menu styling */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 .background {
   /* height:auto; */
   position: relative;
@@ -404,7 +400,7 @@ form {
   position: absolute;
   height: fit-content;
   width: 70%;
-  top: 150px;
+  top: 50px;
   left: 15%;
   background: white;
   z-index: 4;
@@ -412,6 +408,7 @@ form {
   padding: 20px;
   border: 1px solid black;
 }
+
 .cancel {
   border: none;
   height: 70px;
@@ -438,30 +435,35 @@ form {
   background-image: linear-gradient(red, #fdd54f);
 }
 
-.footer {
+.footer,
+.footer-content {
   height: 100px;
   display: flex;
+  font-size: 40px;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   background-image: linear-gradient(
     rgba(248, 4, 156, 1),
     rgba(253, 213, 79, 1)
   );
 }
 
+/* .social {
+  margin: 0px 10px;
+} */
+
 .add-item-to-order,
 .comboMeal {
   position: absolute;
   left: 80%;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
-/* .fab {
+.fab {
   margin: 10px;
   font-size: 40px;
   color: white;
-} */
+}
 form.fte,
 form.fte input,
 form.fte textarea,
