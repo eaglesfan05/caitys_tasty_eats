@@ -456,9 +456,11 @@ form {
 .comboMeal {
   position: absolute;
   left: 80%;
-  /* opacity: 0; */
+  opacity: 0;
 }
-
+.item-amount {
+  width: 10px;
+}
 .fab {
   margin: 10px;
   font-size: 40px;
