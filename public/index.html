@@ -251,6 +251,10 @@
                           <div class="menu-row">
                               <div class="title menu-column">Kielbasa Hash</div>
                               <div class="price menu-column">$10</div>
+                              <div class="amount menu-column">
+                                <button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button>
+                                <!-- <button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button> -->
+                              </div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="kielbasa" 
                                 value="Kielbasa Hash"
                                 class="add-item-to-order"
@@ -259,6 +263,7 @@
                           <div class="menu-row">
                               <div class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</div>
                               <div class="price menu-column">$10</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="cajunPasta" 
                                 value="Chicken and Creamy Cajun Pasta"
                                 class="add-item-to-order">Add to Order</label>
@@ -266,8 +271,7 @@
                           <div class="menu-row">
                               <div class="title menu-column"><span class="new">New </span> Chicken Tostadas</div>
                               <div class="price menu-column">$10</div>
-                              
-                          
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>                          
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="tostada" 
                                 value="Chicken Tostada"
                                 class="add-item-to-order">Add to Order</label>
@@ -290,6 +294,7 @@
                              Quarter Chicken
                              </span>
                              <span class="price menu-column">$10</span>
+                             <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                              <label 
                              data-toggle="collapse" 
                              data-target="#quarterChickenSides"
@@ -345,12 +350,14 @@
                                   <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
                               </div>
                          </div>
+                         
                          </div>
                          <div class="menu-row">
                           <span class="title menu-column">
                            Blackened Salmon   
                           </span>
                           <span class="price menu-column">$10</span>
+                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                           <label class="add-combo menu-column" data-toggle="collapse" data-target="#salmonSides" type="label">  <input type="checkbox" name="choices" id="salmon" 
                                 value="Blackened Salmon"
                                 class="comboMeal add-item-to-order"
@@ -408,6 +415,7 @@
                            Sazon Shrimp  
                           </span>
                           <span class="price menu-column">$10</span>
+                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                           <label data-toggle="collapse" 
                           data-target="#shrimpSides" 
                           class="add-combo menu-column" 
@@ -467,7 +475,9 @@
                       </div>
                       </div>
                   </div>
-                 
+                  <div >
+                    <button id="add-another-combo">Add Another Combo?</button>
+                  </div>
                   <div class="menu-section">
                       <div class="menu-section-header">
                           <h1>Sides</h1>
@@ -477,6 +487,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">Baked Mac and Cheese</div>
                               <div class="price menu-column">$2</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="maccandCheese" 
                                 value="Baked Mac and Cheese"
                                 class="add-item-to-order">Add to Order</label>
@@ -484,6 +495,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">Smashed Red Potatoes</div>
                               <div class="price menu-column">$2</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="potatoes" 
                                 value="Smashed Red Potatoes"
                                 class="add-item-to-order">Add to Order</label>
@@ -491,6 +503,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">Jallof Rice</div>
                               <div class="price menu-column">$2</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="jallof" 
                                 value="Jallof Rice"
                                 class="add-item-to-order">Add to Order</label>
@@ -498,6 +511,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">White Rice</div>
                               <div class="price menu-column">$2</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="white-rice" 
                                 value="White Rice"
                                 class="add-item-to-order">Add to Order</label>
@@ -505,6 +519,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">Black Beans</div>
                               <div class="price menu-column">$2</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="blackbeans" 
                                 value="Black Beans"
                                 class="add-item-to-order">Add to Order</label>
@@ -512,6 +527,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">Seasoned Broccoli</div>
                               <div class="price menu-column">$2</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="broccoli" 
                                 value="Broccoli"
                                 class="add-item-to-order">Add to Order</label>
@@ -519,9 +535,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">Cinnamon Sugar Sweet Potatoes</div>
                               <div class="price menu-column">$2</div>
-                              <!-- <div class="menu-column amount">
-                                <input class="item-amount" type="text">
-                              </div> -->
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="sweetPotatoes" 
                                 value="Cinnamon Sugar Sweet Potatoes"
                                 class="add-item-to-order">Add to Order</label>
@@ -542,6 +556,7 @@
                                   Banana Pudding
                               </div>
                               <div class="price menu-column">$4</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="banana" 
                                 value="Banana Pudding"
                                 class="add-item-to-order">Add to Order</label>
@@ -549,6 +564,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">S'mores To-Go</div>
                               <div class="price menu-column">$4</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="smores" 
                                 value="S'mores To-Go"
                                 class="add-item-to-order">Add to Order</label>
@@ -556,6 +572,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">Chocolate Ribbon Pie</div>
                               <div class="price menu-column">$4</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="chocolatePie" 
                                 value="Chocolate Ribbon Pie"
                                 class="add-item-to-order">Add to Order</label>
@@ -563,6 +580,7 @@
                           <div class="menu-row">
                               <div class="title menu-column">Mixed Berry Shortcake</div>
                               <div class="price menu-column">$4</div>
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
                               <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="shortcake" 
                                 value="Mixed Berry Shortcake"
                                 class="add-item-to-order">Add to Order</label>
@@ -572,7 +590,7 @@
               </div>    
              </div>
           </div>
-          <a href="#" class="btn" role="button" id="sendOrder" onclick="fuckinDoIt()">Add Selections to Order</a>
+          <a href="#checkout" class="btn" role="button" id="sendOrder" onclick="fuckinDoIt()">Add Selections to Order</a>
           </form>
         </div>
         
@@ -643,14 +661,245 @@
     ></script>
     <script src="./assets/scripts/fuck.js"></script>
     <script type="text/javascript">
+$('.count').on('click', function() {
+  event.preventDefault()
+  var $button = $(this)
+  var oldValue = $button.parent().find('input').val()
+  // alert(oldValue)
+  if ($button.text() == "+") {
+	  var newVal = parseFloat(oldValue) + 1;
+	} else {
+   // Don't allow decrementing below zero
+    if (oldValue > 0) {
+      var newVal = parseFloat(oldValue) - 1;
+    } else {
+      newVal = 0;
+    }
+  }
+
+  $button.parent().find("input").val(newVal);
+})
+      let addExtraCombo = document.getElementById('add-another-combo');
+      addExtraCombo.addEventListener('click', function() {
+        event.preventDefault()
+        // alert('clicked')
+        let putItHere = document.getElementById('combos')
+        let comboSection = document.createElement('div')
+        comboSection.innerHTML = `
+        <div class="menu-items collapse" id="combos">
+                          <div class="disclaimer">2 Sides included</div>
+                          <hr>
+                         <div class="menu-row">
+                             <span class="title menu-column">
+                             Quarter Chicken
+                             </span>
+                             <span class="price menu-column">$10</span>
+                             <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
+                             <label 
+                             data-toggle="collapse" 
+                             data-target="#quarterChickenSides"
+                             class="add-combo menu-column" type="label">  <input type="checkbox" name="choices" id="collapsible" 
+                                value="Quarter Chicken"
+                                class="comboMeal add-item-to-order"
+                                >Add to Order</label>
+                                <div >
+                                <div id="quarterChickenSides"
+                                class="collapse">
+                                  <h2>First Side</h2>
+                                  <input type="radio" id="mac-and-cheese" name="firstQuarterSide" value="Baked Mac And Cheese"
+                                  class="add-side-to-order">
+                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                                  <input type="radio" id="smashed-red-potatoes" name="firstQuarterSide" value="Smashed Red Potatoes"
+                                  class="add-side-to-order">
+                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                                  <input type="radio" id="jallof-rice" name="firstQuarterSide" value="Jallof Rice"
+                                  class="add-side-to-order">
+                                  <label for="jallof-rice">Jallof Rice</label>
+                                  <input type="radio" id="white-rice" name="firstQuarterSide" value="White Rice"
+                                  class="add-side-to-order">
+                                  <label for="white-rice">White Rice</label>
+                                  <input type="radio" id="black-beans" name="firstQuarterSide" value="Black Beans"
+                                  class="add-side-to-order">
+                                  <label for="black-beans">Black Beans</label>
+                                  <input type="radio" id="cinnamon-sweet-potatoes" name="firstQuarterSide" value="
+                                  Cinnamon Sweet Potatoes"
+                                  class="add-side-to-order">
+                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                                  <br>
+                                  <hr>
+                                  <br>
+                                  <h2>Second Side</h2>
+                                  <input type="radio" id="mac-and-cheese" name="secondQuarterSide"
+                                  class="add-side-to-order" value="Baked Mac And Cheese">
+                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                                  <input type="radio" id="smashed-red-potatoes" name="secondQuarterSide" 
+                                  class="add-side-to-order" value="Smashed Red Potatoes">
+                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                                  <input type="radio" id="jallof-rice" name="secondQuarterSide" 
+                                  class="add-side-to-order" value="Jallof Rice">
+                                  <label for="jallof-rice">Jallof Rice</label>
+                                  <input type="radio" id="white-rice" name="secondQuarterSide" 
+                                  class="add-side-to-order" value="White Rice">
+                                  <label for="white-rice">White Rice</label>
+                                  <input type="radio" id="black-beans" name="secondQuarterSide"
+                                  class="add-side-to-order"  value="Black Beans">
+                                  <label for="black-beans">Black Beans</label>
+                                  <input type="radio" id="cinnamon-sweet-potatoes" 
+                                  name="secondQuarterSide" 
+                                  class="add-side-to-order" value="Cinnamon Sweet Potatoes">
+                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                              </div>
+                         </div>
+                         
+                         </div>
+                         <div class="menu-row">
+                          <span class="title menu-column">
+                           Blackened Salmon   
+                          </span>
+                          <span class="price menu-column">$10</span>
+                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
+                          <label class="add-combo menu-column" data-toggle="collapse" data-target="#salmonSides" type="label">  <input type="checkbox" name="choices" id="salmon" 
+                                value="Blackened Salmon"
+                                class="comboMeal add-item-to-order"
+                                >Add to Order</label>
+                                <div id="salmonSides"
+                                class="collapse">
+                                  <h2>First Side</h2>
+                                  <input type="radio" id="mac-and-cheese" name="firstSalmonSide" value="Baked Mac And Cheese"
+                                  class="add-side-to-order">
+                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                                  <input type="radio" id="smashed-red-potatoes" name="firstSalmonSide" value="Smashed Red Potatoes"
+                                  class="add-side-to-order">
+                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                                  <input type="radio" id="jallof-rice" name="firstSalmonSide" value="Jallof Rice"
+                                  class="add-side-to-order">
+                                  <label for="jallof-rice">Jallof Rice</label>
+                                  <input type="radio" id="white-rice" name="firstSalmonSide" value="White Rice"
+                                  class="add-side-to-order">
+                                  <label for="white-rice">White Rice</label>
+                                  <input type="radio" id="black-beans" name="firstSalmonSide" value="Black Beans"
+                                  class="add-side-to-order">
+                                  <label for="black-beans">Black Beans</label>
+                                  <input type="radio" id="cinnamon-sweet-potatoes" name="firstSalmonSide" value="
+                                  Cinnamon Sweet Potatoes"
+                                  class="add-side-to-order">
+                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                                  <br>
+                                  <hr>
+                                  <br>
+                                  <h2>Second Side</h2>
+                                  <input type="radio" id="mac-and-cheese" name="secondSalmonSide"
+                                  class="add-side-to-order" value="Baked Mac And Cheese">
+                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                                  <input type="radio" id="smashed-red-potatoes" name="secondSalmonSide" 
+                                  class="add-side-to-order" value="Smashed Red Potatoes">
+                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                                  <input type="radio" id="jallof-rice" name="secondSalmonSide" 
+                                  class="add-side-to-order" value="Jallof Rice">
+                                  <label for="jallof-rice">Jallof Rice</label>
+                                  <input type="radio" id="white-rice" name="secondSalmonSide" 
+                                  class="add-side-to-order" value="White Rice">
+                                  <label for="white-rice">White Rice</label>
+                                  <input type="radio" id="black-beans" name="secondSalmonSide"
+                                  class="add-side-to-order"  value="Black Beans">
+                                  <label for="black-beans">Black Beans</label>
+                                  <input type="radio" id="cinnamon-sweet-potatoes" 
+                                  name="secondSalmonSide" 
+                                  class="add-side-to-order" value="Cinnamon Sweet Potatoes">
+                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                              </div>
+ 
+                      </div>
+                      <div class="menu-row">
+                          <span class="title menu-column">
+                           Sazon Shrimp  
+                          </span>
+                          <span class="price menu-column">$10</span>
+                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
+                          <label data-toggle="collapse" 
+                          data-target="#shrimpSides" 
+                          class="add-combo menu-column" 
+                          type="label">  
+                          <input type="checkbox" name="choices" id="shrimp" 
+                                value="
+                                Sazon Shrimp"
+                                class="comboMeal add-item-to-order"
+                                >Add to Order</label>
+                                <div id="shrimpSides"
+                                class="collapse">
+                                  <h2>First Side</h2>
+                                  <input type="radio" id="mac-and-cheese" name="firstShrimpSide" value="Baked Mac And Cheese"
+                                  class="add-side-to-order">
+                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                                  <input type="radio" id="smashed-red-potatoes" name="firstShrimpSide" value="Smashed Red Potatoes"
+                                  class="add-side-to-order">
+                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                                  <input type="radio" id="jallof-rice" name="firstShrimpSide" value="Jallof Rice"
+                                  class="add-side-to-order">
+                                  <label for="jallof-rice">Jallof Rice</label>
+                                  <input type="radio" id="white-rice" name="firstShrimpSide" value="White Rice"
+                                  class="add-side-to-order">
+                                  <label for="white-rice">White Rice</label>
+                                  <input type="radio" id="black-beans" name="firstShrimpSide" value="Black Beans"
+                                  class="add-side-to-order">
+                                  <label for="black-beans">Black Beans</label>
+                                  <input type="radio" id="cinnamon-sweet-potatoes" name="firstShrimpSide" value="
+                                  Cinnamon Sweet Potatoes"
+                                  class="add-side-to-order">
+                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                                  <br>
+                                  <hr>
+                                  <br>
+                                  <h2>Second Side</h2>
+                                  <input type="radio" id="mac-and-cheese" name="secondShrimpSide"
+                                  class="add-side-to-order" value="Baked Mac And Cheese">
+                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
+                                  <input type="radio" id="smashed-red-potatoes" name="secondShrimpSide" 
+                                  class="add-side-to-order" value="Smashed Red Potatoes">
+                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
+                                  <input type="radio" id="jallof-rice" name="secondShrimpSide" 
+                                  class="add-side-to-order" value="Jallof Rice">
+                                  <label for="jallof-rice">Jallof Rice</label>
+                                  <input type="radio" id="white-rice" name="secondShrimpSide" 
+                                  class="add-side-to-order" value="White Rice">
+                                  <label for="white-rice">White Rice</label>
+                                  <input type="radio" id="black-beans" name="secondShrimpSide"
+                                  class="add-side-to-order"  value="Black Beans">
+                                  <label for="black-beans">Black Beans</label>
+                                  <input type="radio" id="cinnamon-sweet-potatoes" 
+                                  name="secondShrimpSide" 
+                                  class="add-side-to-order" value="Cinnamon Sweet Potatoes">
+                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
+                              </div>
+                            
+                      </div>
+                      </div>`
+                      putItHere.append(comboSection)
+        // <div class="menu-items collapse" id="combos">
+      })
     function fuckinDoIt(e) {
     // e.preventDefault()
     let checks = document.getElementsByClassName('add-item-to-order');
     let radios = document.getElementsByClassName('add-side-to-order');
-   
+    let quantity;
+    // let quantityInput = document.getElementsByClassName('inputAmount');
+
+    // for(i = 0; i < quantityInput.length; i++) {
+    //   let input = quantityInput[i];
+    //   input.addEventListener('change', )
+    // }
     var str = ''
    
     for(i= 0; i <checks.length; i++) {
+      // quantityInput = document.getElementsByClassName('amountInput');
+      // console.log(quantityInput.length)
+      for(i = 0; i < quantityInput.length; i++) {
+        // let input = quantityInput[i];
+        // console.log(quantityInput.length)
+        // input.addEventListener('change', () => {
+        //   console.log(input.value)
+        // })
+      }
       // console.log("checks length" + checks.length)
       // let itemClicked = checks.parentElement.parentElement
       // let name = document.getElementsByClassName('title')[i].innerText
@@ -658,7 +907,9 @@
       // let name = itemClicked.getElementsByClassName('title')[i].innerText;
       // console.log('title ' +name)
         if(checks[i].checked) {
-           
+          //  let addLabels = document.getElementsByClassName('add-item')
+          //  let added = "added"
+          //  addLabels.innerText = added
             str += "Item: " + checks[i].value + ", "
         }
     }
