@@ -877,6 +877,31 @@ $('.count').on('click', function() {
                       putItHere.append(comboSection)
         // <div class="menu-items collapse" id="combos">
       })
+
+      let amount
+      const count = () => {
+        $('.count').on('click', function() {
+          e.preventDefault()
+          var $button = $(this);
+          var oldVal = $button.parent().find('input').val()
+          if($button.text() == '+') {
+            var newVal = parseFloat(oldVal) + 1;
+            amount = newVal
+            console.log('added' + newVal)
+          } else {
+            if(oldVal > 0) {
+              var newVal = parseFloat(oldVal) -1;
+              amount = newVal
+
+              console.log('subtracted' + newVal)
+            }  else {
+            newVal = 0
+            amount = newVal
+
+          }
+          }
+        })
+      }
     function fuckinDoIt(e) {
     // e.preventDefault()
     let checks = document.getElementsByClassName('add-item-to-order');
@@ -891,15 +916,10 @@ $('.count').on('click', function() {
     var str = ''
    
     for(i= 0; i <checks.length; i++) {
+
       // quantityInput = document.getElementsByClassName('amountInput');
       // console.log(quantityInput.length)
-      for(i = 0; i < quantityInput.length; i++) {
-        // let input = quantityInput[i];
-        // console.log(quantityInput.length)
-        // input.addEventListener('change', () => {
-        //   console.log(input.value)
-        // })
-      }
+      
       // console.log("checks length" + checks.length)
       // let itemClicked = checks.parentElement.parentElement
       // let name = document.getElementsByClassName('title')[i].innerText
@@ -907,6 +927,15 @@ $('.count').on('click', function() {
       // let name = itemClicked.getElementsByClassName('title')[i].innerText;
       // console.log('title ' +name)
         if(checks[i].checked) {
+          let parent = checks[i].parentElement.parentElement
+          console.log(parent)
+         
+          // let amount = selected.getElementsByClassName('amount-place').value
+          // console.log(amount)
+      // console.log(button)
+      // console.log(menuRow)
+      // let amount = menuRow.getElementsByClassName('amount-place').value
+      // console.log('this is the amount' + amount)
           //  let addLabels = document.getElementsByClassName('add-item')
           //  let added = "added"
           //  addLabels.innerText = added
