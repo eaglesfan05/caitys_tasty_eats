@@ -1,6 +1,4 @@
-
 $(function() { 
-
 var coll = document.getElementsByClassName('menu-section-header');
 var i;
 for(i = 0; i < coll.length; i++) {

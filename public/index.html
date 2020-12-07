@@ -26,7 +26,7 @@
       src="https://kit.fontawesome.com/e045211231.js"
       crossorigin="anonymous"
     ></script>
-    
+   
   </head>
   <body>
     <!-- Nav bar -->
@@ -172,68 +172,9 @@
           <div id="available">
             <div class="disclaimer">Local Pickup Available Daily<br>Delivery Available Weekends Only</div>
           </div>       
-            <div class="background">
-              <!-- hidden side options -->
-              <div id="side-options">
-                <div class="sides-choice-header">
-                    <h1>Please choose your sides</h1>
-                </div>
-                <br>
-                <hr>
-                <br>
-                <!-- <div id="pick-sides">
-                    <h2>First Side</h2>
-                    <input type="radio" id="mac-and-cheese" name="first-choice" value="Baked Mac And Cheese"
-                    class="add-item-to-order">
-                    <label for="mac-and-cheese">Baked Mac and Cheese</label>
-                    <input type="radio" id="smashed-red-potatoes" name="first-choice" value="First Side: Smashed Red Potatoes"
-                    class="add-item-to-order">
-                    <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
-                    <input type="radio" id="jallof-rice" name="first-choice" value="First Side: Jallof Rice"
-                    class="add-item-to-order">
-                    <label for="jallof-rice">Jallof Rice</label>
-                    <input type="radio" id="white-rice" name="first-choice" value="First Side: White Rice"
-                    class="add-item-to-order">
-                    <label for="white-rice">White Rice</label>
-                    <input type="radio" id="black-beans" name="first-choice" value="Black Beans"
-                    class="add-item-to-order">
-                    <label for="black-beans">Black Beans</label>
-                    <input type="radio" id="cinnamon-sweet-potatoes" name="first-choice" value="
-                    First Side: Cinnamon Sweet Potatoes">
-                    <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
-                    <br>
-                    <hr>
-                    <br>
-                    <h2>Second Side</h2>
-                    <input type="radio" id="mac-and-cheese" name="second-choice"
-                    class="secondChoice" value="Baked Mac And Cheese">
-                    <label for="mac-and-cheese">Baked Mac and Cheese</label>
-                    <input type="radio" id="smashed-red-potatoes" name="second-choice" 
-                    class="secondChoice" value="Second Side: Smashed Red Potatoes">
-                    <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
-                    <input type="radio" id="jallof-rice" name="second-choice" 
-                    class="secondChoice" value="Second Side: Jallof Rice">
-                    <label for="jallof-rice">Jallof Rice</label>
-                    <input type="radio" id="white-rice" name="second-choice" 
-                    class="secondChoice" value="Second Side: White Rice">
-                    <label for="white-rice">White Rice</label>
-                    <input type="radio" id="black-beans" name="second-choice"
-                    class="secondChoice"  value="Second Side: Black Beans">
-                    <label for="black-beans">Black Beans</label>
-                    <input type="radio" id="cinnamon-sweet-potatoes" 
-                    name="second-choice" 
-                    class="secondChoice" value="Second Side: Cinnamon Sweet Potatoes">
-                    <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
-                </div> -->
-                <div class="group">
-                    <button class="add-item add-combo combo-sides"
-                    id="add-combo">Add to Order</button>
-                    <button class="cancel combo-sides">Cancel</button>
-                </div>
-              </div>
-              
+            <div class="background">              
               <div class="menu " id="menu">
-                 <form>
+                 <form id="menuForm">
                   <div class="menu-header"><h1>Check Out My Menu</h1>          
                   </div>
                  
@@ -475,9 +416,6 @@
                       </div>
                       </div>
                   </div>
-                  <div >
-                    <button id="add-another-combo">Add Another Combo?</button>
-                  </div>
                   <div class="menu-section">
                       <div class="menu-section-header">
                           <h1>Sides</h1>
@@ -590,7 +528,7 @@
               </div>    
              </div>
           </div>
-          <a href="#checkout" class="btn" role="button" id="sendOrder" onclick="fuckinDoIt()">Add Selections to Order</a>
+          <a href="#checkout" class="btn" role="button" id="sendOrder">Add Selections to Order</a>
           </form>
         </div>
         
@@ -599,14 +537,7 @@
     
    
                  </form>
-                    <!-- contact -->
-
-      <!-- Name -->
-      <!-- Contact -->
-      <!-- message -->
-      <!-- submit -->
-      <!-- social media links -->
-      
+              
     <!-- fte -->
     
     <!-- FormToEmail HTML -->	 
@@ -659,354 +590,100 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <!-- Personal Javascript -->
     <script src="./assets/scripts/fuck.js"></script>
-    <script type="text/javascript">
-$('.count').on('click', function() {
-  event.preventDefault()
-  var $button = $(this)
-  var oldValue = $button.parent().find('input').val()
-  // alert(oldValue)
-  if ($button.text() == "+") {
-	  var newVal = parseFloat(oldValue) + 1;
-	} else {
-   // Don't allow decrementing below zero
-    if (oldValue > 0) {
-      var newVal = parseFloat(oldValue) - 1;
-    } else {
-      newVal = 0;
-    }
-  }
-
-  $button.parent().find("input").val(newVal);
-})
-      let addExtraCombo = document.getElementById('add-another-combo');
-      addExtraCombo.addEventListener('click', function() {
-        event.preventDefault()
-        // alert('clicked')
-        let putItHere = document.getElementById('combos')
-        let comboSection = document.createElement('div')
-        comboSection.innerHTML = `
-        <div class="menu-items collapse" id="combos">
-                          <div class="disclaimer">2 Sides included</div>
-                          <hr>
-                         <div class="menu-row">
-                             <span class="title menu-column">
-                             Quarter Chicken
-                             </span>
-                             <span class="price menu-column">$10</span>
-                             <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
-                             <label 
-                             data-toggle="collapse" 
-                             data-target="#quarterChickenSides"
-                             class="add-combo menu-column" type="label">  <input type="checkbox" name="choices" id="collapsible" 
-                                value="Quarter Chicken"
-                                class="comboMeal add-item-to-order"
-                                >Add to Order</label>
-                                <div >
-                                <div id="quarterChickenSides"
-                                class="collapse">
-                                  <h2>First Side</h2>
-                                  <input type="radio" id="mac-and-cheese" name="firstQuarterSide" value="Baked Mac And Cheese"
-                                  class="add-side-to-order">
-                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
-                                  <input type="radio" id="smashed-red-potatoes" name="firstQuarterSide" value="Smashed Red Potatoes"
-                                  class="add-side-to-order">
-                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
-                                  <input type="radio" id="jallof-rice" name="firstQuarterSide" value="Jallof Rice"
-                                  class="add-side-to-order">
-                                  <label for="jallof-rice">Jallof Rice</label>
-                                  <input type="radio" id="white-rice" name="firstQuarterSide" value="White Rice"
-                                  class="add-side-to-order">
-                                  <label for="white-rice">White Rice</label>
-                                  <input type="radio" id="black-beans" name="firstQuarterSide" value="Black Beans"
-                                  class="add-side-to-order">
-                                  <label for="black-beans">Black Beans</label>
-                                  <input type="radio" id="cinnamon-sweet-potatoes" name="firstQuarterSide" value="
-                                  Cinnamon Sweet Potatoes"
-                                  class="add-side-to-order">
-                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
-                                  <br>
-                                  <hr>
-                                  <br>
-                                  <h2>Second Side</h2>
-                                  <input type="radio" id="mac-and-cheese" name="secondQuarterSide"
-                                  class="add-side-to-order" value="Baked Mac And Cheese">
-                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
-                                  <input type="radio" id="smashed-red-potatoes" name="secondQuarterSide" 
-                                  class="add-side-to-order" value="Smashed Red Potatoes">
-                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
-                                  <input type="radio" id="jallof-rice" name="secondQuarterSide" 
-                                  class="add-side-to-order" value="Jallof Rice">
-                                  <label for="jallof-rice">Jallof Rice</label>
-                                  <input type="radio" id="white-rice" name="secondQuarterSide" 
-                                  class="add-side-to-order" value="White Rice">
-                                  <label for="white-rice">White Rice</label>
-                                  <input type="radio" id="black-beans" name="secondQuarterSide"
-                                  class="add-side-to-order"  value="Black Beans">
-                                  <label for="black-beans">Black Beans</label>
-                                  <input type="radio" id="cinnamon-sweet-potatoes" 
-                                  name="secondQuarterSide" 
-                                  class="add-side-to-order" value="Cinnamon Sweet Potatoes">
-                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
-                              </div>
-                         </div>
-                         
-                         </div>
-                         <div class="menu-row">
-                          <span class="title menu-column">
-                           Blackened Salmon   
-                          </span>
-                          <span class="price menu-column">$10</span>
-                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
-                          <label class="add-combo menu-column" data-toggle="collapse" data-target="#salmonSides" type="label">  <input type="checkbox" name="choices" id="salmon" 
-                                value="Blackened Salmon"
-                                class="comboMeal add-item-to-order"
-                                >Add to Order</label>
-                                <div id="salmonSides"
-                                class="collapse">
-                                  <h2>First Side</h2>
-                                  <input type="radio" id="mac-and-cheese" name="firstSalmonSide" value="Baked Mac And Cheese"
-                                  class="add-side-to-order">
-                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
-                                  <input type="radio" id="smashed-red-potatoes" name="firstSalmonSide" value="Smashed Red Potatoes"
-                                  class="add-side-to-order">
-                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
-                                  <input type="radio" id="jallof-rice" name="firstSalmonSide" value="Jallof Rice"
-                                  class="add-side-to-order">
-                                  <label for="jallof-rice">Jallof Rice</label>
-                                  <input type="radio" id="white-rice" name="firstSalmonSide" value="White Rice"
-                                  class="add-side-to-order">
-                                  <label for="white-rice">White Rice</label>
-                                  <input type="radio" id="black-beans" name="firstSalmonSide" value="Black Beans"
-                                  class="add-side-to-order">
-                                  <label for="black-beans">Black Beans</label>
-                                  <input type="radio" id="cinnamon-sweet-potatoes" name="firstSalmonSide" value="
-                                  Cinnamon Sweet Potatoes"
-                                  class="add-side-to-order">
-                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
-                                  <br>
-                                  <hr>
-                                  <br>
-                                  <h2>Second Side</h2>
-                                  <input type="radio" id="mac-and-cheese" name="secondSalmonSide"
-                                  class="add-side-to-order" value="Baked Mac And Cheese">
-                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
-                                  <input type="radio" id="smashed-red-potatoes" name="secondSalmonSide" 
-                                  class="add-side-to-order" value="Smashed Red Potatoes">
-                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
-                                  <input type="radio" id="jallof-rice" name="secondSalmonSide" 
-                                  class="add-side-to-order" value="Jallof Rice">
-                                  <label for="jallof-rice">Jallof Rice</label>
-                                  <input type="radio" id="white-rice" name="secondSalmonSide" 
-                                  class="add-side-to-order" value="White Rice">
-                                  <label for="white-rice">White Rice</label>
-                                  <input type="radio" id="black-beans" name="secondSalmonSide"
-                                  class="add-side-to-order"  value="Black Beans">
-                                  <label for="black-beans">Black Beans</label>
-                                  <input type="radio" id="cinnamon-sweet-potatoes" 
-                                  name="secondSalmonSide" 
-                                  class="add-side-to-order" value="Cinnamon Sweet Potatoes">
-                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
-                              </div>
- 
-                      </div>
-                      <div class="menu-row">
-                          <span class="title menu-column">
-                           Sazon Shrimp  
-                          </span>
-                          <span class="price menu-column">$10</span>
-                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
-                          <label data-toggle="collapse" 
-                          data-target="#shrimpSides" 
-                          class="add-combo menu-column" 
-                          type="label">  
-                          <input type="checkbox" name="choices" id="shrimp" 
-                                value="
-                                Sazon Shrimp"
-                                class="comboMeal add-item-to-order"
-                                >Add to Order</label>
-                                <div id="shrimpSides"
-                                class="collapse">
-                                  <h2>First Side</h2>
-                                  <input type="radio" id="mac-and-cheese" name="firstShrimpSide" value="Baked Mac And Cheese"
-                                  class="add-side-to-order">
-                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
-                                  <input type="radio" id="smashed-red-potatoes" name="firstShrimpSide" value="Smashed Red Potatoes"
-                                  class="add-side-to-order">
-                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
-                                  <input type="radio" id="jallof-rice" name="firstShrimpSide" value="Jallof Rice"
-                                  class="add-side-to-order">
-                                  <label for="jallof-rice">Jallof Rice</label>
-                                  <input type="radio" id="white-rice" name="firstShrimpSide" value="White Rice"
-                                  class="add-side-to-order">
-                                  <label for="white-rice">White Rice</label>
-                                  <input type="radio" id="black-beans" name="firstShrimpSide" value="Black Beans"
-                                  class="add-side-to-order">
-                                  <label for="black-beans">Black Beans</label>
-                                  <input type="radio" id="cinnamon-sweet-potatoes" name="firstShrimpSide" value="
-                                  Cinnamon Sweet Potatoes"
-                                  class="add-side-to-order">
-                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
-                                  <br>
-                                  <hr>
-                                  <br>
-                                  <h2>Second Side</h2>
-                                  <input type="radio" id="mac-and-cheese" name="secondShrimpSide"
-                                  class="add-side-to-order" value="Baked Mac And Cheese">
-                                  <label for="mac-and-cheese">Baked Mac and Cheese</label>
-                                  <input type="radio" id="smashed-red-potatoes" name="secondShrimpSide" 
-                                  class="add-side-to-order" value="Smashed Red Potatoes">
-                                  <label for="smashed-red-potatoes">Smashed Red Potatoes</label>
-                                  <input type="radio" id="jallof-rice" name="secondShrimpSide" 
-                                  class="add-side-to-order" value="Jallof Rice">
-                                  <label for="jallof-rice">Jallof Rice</label>
-                                  <input type="radio" id="white-rice" name="secondShrimpSide" 
-                                  class="add-side-to-order" value="White Rice">
-                                  <label for="white-rice">White Rice</label>
-                                  <input type="radio" id="black-beans" name="secondShrimpSide"
-                                  class="add-side-to-order"  value="Black Beans">
-                                  <label for="black-beans">Black Beans</label>
-                                  <input type="radio" id="cinnamon-sweet-potatoes" 
-                                  name="secondShrimpSide" 
-                                  class="add-side-to-order" value="Cinnamon Sweet Potatoes">
-                                  <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
-                              </div>
-                            
-                      </div>
-                      </div>`
-                      putItHere.append(comboSection)
-        // <div class="menu-items collapse" id="combos">
-      })
-
-      let amount
-      const count = () => {
-        $('.count').on('click', function() {
-          e.preventDefault()
-          var $button = $(this);
-          var oldVal = $button.parent().find('input').val()
-          if($button.text() == '+') {
-            var newVal = parseFloat(oldVal) + 1;
-            amount = newVal
-            console.log('added' + newVal)
-          } else {
-            if(oldVal > 0) {
-              var newVal = parseFloat(oldVal) -1;
-              amount = newVal
-
-              console.log('subtracted' + newVal)
-            }  else {
-            newVal = 0
-            amount = newVal
-
-          }
-          }
-        })
-      }
-    function fuckinDoIt(e) {
-    // e.preventDefault()
-    let checks = document.getElementsByClassName('add-item-to-order');
-    let radios = document.getElementsByClassName('add-side-to-order');
-    let quantity;
-    // let quantityInput = document.getElementsByClassName('inputAmount');
-
-    // for(i = 0; i < quantityInput.length; i++) {
-    //   let input = quantityInput[i];
-    //   input.addEventListener('change', )
-    // }
-    var str = ''
-   
-    for(i= 0; i <checks.length; i++) {
-
-      // quantityInput = document.getElementsByClassName('amountInput');
-      // console.log(quantityInput.length)
-      
-      // console.log("checks length" + checks.length)
-      // let itemClicked = checks.parentElement.parentElement
-      // let name = document.getElementsByClassName('title')[i].innerText
-      // let itemClicked = button.parentElement.parentElement;
-      // let name = itemClicked.getElementsByClassName('title')[i].innerText;
-      // console.log('title ' +name)
-        if(checks[i].checked) {
-          let parent = checks[i].parentElement.parentElement
-          console.log(parent)
-         
-          // let amount = selected.getElementsByClassName('amount-place').value
-          // console.log(amount)
-      // console.log(button)
-      // console.log(menuRow)
-      // let amount = menuRow.getElementsByClassName('amount-place').value
-      // console.log('this is the amount' + amount)
-          //  let addLabels = document.getElementsByClassName('add-item')
-          //  let added = "added"
-          //  addLabels.innerText = added
-            str += "Item: " + checks[i].value + ", "
-        }
-    }
-
-    for(i= 0; i <radios.length; i++) {
-      // console.log("order length" + order.length)
-      // let itemClicked = order.parentElement.parentElement
-      // let name = document.getElementsByClassName('title')[i].innerText
-      // let itemClicked = button.parentElement.parentElement;
-      // let name = itemClicked.getElementsByClassName('title')[i].innerText;
-      // console.log('title ' +name)
-        if(radios[i].checked) {
-            str += "Combo Side: " + radios[i].value + ", "
-        }
-    }
-    console.log(str)
-    document.getElementById('orderHere').innerText = str
-}
-
-var comboButtons = document.getElementsByClassName('comboMeal');
-var i;
-for(i = 0; i< comboButtons.length; i++) {
-    comboButtons[i].addEventListener('click', function() {
-      alert('click')
-        // document.getElementById('side-options').style.display = 'block';
-    }) 
-}
-
-var closeSideChoices = document.getElementsByClassName('combo-sides');
-var i;
-for(i = 0; i< closeSideChoices.length; i++) {
-    closeSideChoices[i].addEventListener('click', function() {
-        document.getElementById('side-options').style.display = 'none'
-    })
-}
-
-const clickAddButtons = () => {
-  let buttons = document.getElementsByClassName('add-item-to-order')
-let add= document.getElementsByClassName('add-item')
-  for(i = 0; i < add.length; i++) {
-   
-
-  
-}
-for(var i = 0; i < buttons.length; i++) {
- 
-}
-}
-
-
-// for(var i = 0; i < buttons.length; i++) {
-//   buttons.on('change', function() {
-//     let text = $('.add-item')
-//     for (i = 0; i < text.length; i++) {
-//       text = text[0];
-//       console.log
+    <!-- <script type="text/javascript">
+    fuckinDoIt()
+// $('.count').on('click', function() {
+//   event.preventDefault()
+//   var $button = $(this)
+//   var oldValue = $button.parent().find('input').val()
+//   if ($button.text() == "+") {
+// 	  var newVal = parseFloat(oldValue) + 1;
+// 	} else {
+//    // Don't allow decrementing below zero
+//     if (oldValue > 0) {
+//       var newVal = parseFloat(oldValue) - 1;
+//     } else {
+//       newVal = 0;
 //     }
-//   })
-// }
-const toTop = document.querySelector('.scroll-top')
+//   }
 
-window.addEventListener('scroll', () => {
-    if(window.pageYOffset> 100) {
-        toTop.classList.add('active')
-    } else {
-        toTop.classList.remove('active')
-    }
-})
-    </script>
+//   $button.parent().find("input").val(newVal);
+// })
+     
+//       let amount
+//       const count = () => {
+//         $('.count').on('click', function() {
+//           e.preventDefault()
+//           var $button = $(this);
+//           var oldVal = $button.parent().find('input').val()
+//           if($button.text() == '+') {
+//             var newVal = parseFloat(oldVal) + 1;
+//             amount = newVal
+//             console.log('added' + newVal)
+//           } else {
+//             if(oldVal > 0) {
+//               var newVal = parseFloat(oldVal) -1;
+//             } else {
+//             newVal = 0
+//           }
+//           }
+//         })
+//       }
+
+//       // document.getElementById('sendOrder').on('click', function () {
+        
+//       // })
+//     function fuckinDoIt(e) {
+//     let checks = document.getElementsByClassName('add-item-to-order');
+//     let radios = document.getElementsByClassName('add-side-to-order');
+//     let quantity;
+//     var str = ''
+   
+//     for(i= 0; i <checks.length; i++) {    
+//         if(checks[i].checked) {
+//           let parent = checks[i].parentElement.parentElement
+//           let amount = document.getElementsByClassName('amount-place')[i].value
+//           console.log(amount)
+//           str += "Item: " + amount + " " + checks[i].value +   ", "
+//         }
+//     }
+
+//     for(i= 0; i <radios.length; i++) {
+//         if(radios[i].checked) {
+//             str += "Combo Side: " + radios[i].value + ", "
+//         }
+//     }
+//     console.log(str)
+//     document.getElementById('orderHere').innerText = str
+//     }
+
+// var comboButtons = document.getElementsByClassName('comboMeal');
+// var i;
+// for(i = 0; i< comboButtons.length; i++) {
+//     comboButtons[i].addEventListener('click', function() {
+//       alert('click')
+//     }) 
+// }
+
+// var closeSideChoices = document.getElementsByClassName('combo-sides');
+// var i;
+// for(i = 0; i< closeSideChoices.length; i++) {
+//     closeSideChoices[i].addEventListener('click', function() {
+//         document.getElementById('side-options').style.display = 'none'
+//     })
+// }
+
+// const toTop = document.querySelector('.scroll-top')
+
+// window.addEventListener('scroll', () => {
+//     if(window.pageYOffset> 100) {
+//         toTop.classList.add('active')
+//     } else {
+//         toTop.classList.remove('active')
+//     }
+// })
+    </script> -->
     </body>
 </html>
