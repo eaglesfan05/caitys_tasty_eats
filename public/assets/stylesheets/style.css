@@ -149,6 +149,10 @@ ul li {
   pointer-events: auto;
 }
 
+/* .add-item.active {
+  background-color: grey;
+} */
+
 #contactpage {
   padding-top: 80px;
 }
@@ -674,4 +678,8 @@ form.fte .credit a {
   border: none;
   font-size: 30px;
   border-bottom: 2px solid rgba(248, 4, 156, 1);
+}
+
+.add-item input[type="checkbox"]:checked + label {
+  background: brown;
 }

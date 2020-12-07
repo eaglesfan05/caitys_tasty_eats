@@ -65,7 +65,10 @@ $('.count').on('click', function(event) {
       for(i= 0; i <checks.length; i++) {    
           if(checks[i].checked) {
             let parent = checks[i].parentElement.parentElement
-            let amount = document.getElementsByClassName('amount-place')[i].value
+            let amount = parent.getElementsByClassName('amount-place')[0].value
+            let checkedLabel = parent.getElementsByClassName('add-item')[0].textContent
+            // console.log(checkedLabel.textContent)
+            checkedLabel.textContent = "added"
             console.log(amount)
             str += "Item: " + amount + " " + checks[i].value +   ", "
           }
