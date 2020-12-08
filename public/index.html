@@ -164,7 +164,10 @@
           </div>
         </div>
       </div>
-
+      <!-- <div class="add-remove-stuff">
+        <div class="progress added">Added</div>
+        <div class="progress removed">Removed</div>
+      </div> -->
       <!-- Menu -->
       <div >
         <form>
@@ -176,12 +179,11 @@
               <div class="menu " id="menu">
                  <form id="menuForm">
                   <div class="menu-header"><h1>Check Out My Menu</h1>          
-                  </div>
-                 
+                  </div>           
                  
                  
                   <div class="menu-section">
-                      <div class="menu-section-header" data-toggle="collapse" data-target="#comfort">
+                      <div class="menu-section-header" data-toggle="collapse" data-target="#comfort" id="comfort-food">
                           <h1 class="comfortFood" >Comfort Foods</h1>
                       </div>
                    
@@ -189,19 +191,7 @@
                       <div class="menu-items collapse" id="comfort">
                           <div class="disclaimer">Sides Not Included</div>
                           <hr>
-                          <div class="menu-row">
-                              <div class="title menu-column">Kielbasa Hash</div>
-                              <div class="price menu-column">$10</div>
-                              <div class="amount menu-column">
-                                <button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button>
-                                <!-- <button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button> -->
-                              </div>
-                              <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="kielbasa" 
-                                value="Kielbasa Hash"
-                                class="add-item-to-order"
-                                >Add to Order</label>
-                          </div>
-                          <div class="menu-row">
+                              <div class="menu-row">
                               <div class="title menu-column"><span class="new">New </span> Chicken and Creamy Cajun Pasta</div>
                               <div class="price menu-column">$10</div>
                               <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
@@ -212,18 +202,30 @@
                           <div class="menu-row">
                               <div class="title menu-column"><span class="new">New </span> Chicken Tostadas</div>
                               <div class="price menu-column">$10</div>
-                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>                          
-                              <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="tostada" 
+                              <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>     
+                              <input type="checkbox" name="choices" id="tostada" 
                                 value="Chicken Tostada"
-                                class="add-item-to-order">Add to Order</label>
+                                class="add-item-to-order">                     
+                              <label class="add-item menu-column" type="label">  Add to Order</label>
                           </div>
+                          <div class="menu-row">
+                            <div class="title menu-column">Kielbasa Hash</div>
+                            <div class="price menu-column">$10</div>
+                            <div class="amount menu-column">
+                              <button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button>
+                            </div>
+                            <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="kielbasa" 
+                              value="Kielbasa Hash"
+                              class="add-item-to-order"
+                              >Add to Order</label>
+                        </div>
                       </div>
                      
                   </div>
                   <!-- make menu choices radio buttons-->
                   <div class="menu-section">
                     
-                      <div class="menu-section-header" data-toggle="collapse" data-target="#combos">
+                      <div class="menu-section-header" data-toggle="collapse" data-target="#combos" id="meat-combos">
                           <h1>Combos</h1>
                       </div>
                 
@@ -235,7 +237,7 @@
                              Quarter Chicken
                              </span>
                              <span class="price menu-column">$10</span>
-                             <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
+                             <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place comboAmount' value="0"></span><button class="count plus">+</button></div>
                              <label 
                              data-toggle="collapse" 
                              data-target="#quarterChickenSides"
@@ -289,7 +291,7 @@
                                   class="add-side-to-order" value="Cinnamon Sweet Potatoes">
                                   <label for="cinnamon-sweet-potatoes">Cinnamon Sweet Potatoes</label>
                              
-                         </div>
+                                </div>
                          
                          </div>
                          <div class="menu-row">
@@ -297,7 +299,7 @@
                            Blackened Salmon   
                           </span>
                           <span class="price menu-column">$10</span>
-                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
+                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place comboAmount' value="0"></span><button class="count plus">+</button></div>
                           <label class="add-combo menu-column" data-toggle="collapse" data-target="#salmonSides" type="label">  <input type="checkbox" name="choices" id="salmon" 
                                 value="Blackened Salmon"
                                 class="comboMeal add-item-to-order"
@@ -355,7 +357,7 @@
                            Sazon Shrimp  
                           </span>
                           <span class="price menu-column">$10</span>
-                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
+                          <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place comboAmount' value="0"></span><button class="count plus">+</button></div>
                           <label data-toggle="collapse" 
                           data-target="#shrimpSides" 
                           class="add-combo menu-column" 
@@ -415,8 +417,8 @@
                       </div>
                       </div>
                   </div>
-                  <div class="menu-section">
-                      <div class="menu-section-header">
+                  <div class="menu-section" >
+                      <div class="menu-section-header" data-toggle="collapse" data-target="#side" id="sides">
                           <h1>Sides</h1>
                       </div>
                     
@@ -457,9 +459,13 @@
                               <div class="title menu-column">Black Beans</div>
                               <div class="price menu-column">$2</div>
                               <div class="amount menu-column"><button class="count minus">-</button><input type="text" class='amount-place' value="0"></span><button class="count plus">+</button></div>
-                              <label class="add-item menu-column" type="label">  <input type="checkbox" name="choices" id="blackbeans" 
-                                value="Black Beans"
-                                class="add-item-to-order">Add to Order</label>
+                              <div class="add-item menu-column">
+                                <label for="blackbeans" type="label">Add To Order<input type="checkbox" name="choices" id="blackbeans" 
+                                  value="Black Beans"
+                                  class="add-item-to-order">                     
+                                 
+                              </div>
+                             
                           </div>
                           <div class="menu-row">
                               <div class="title menu-column">Seasoned Broccoli</div>
@@ -483,7 +489,7 @@
                     
                   </div>
                   <div class="menu-section">
-                      <div class="menu-section-header">
+                      <div class="menu-section-header" data-toggle="collapse" data-target="#desert" id="deserts">
                           <h1>Deserts</h1>
                       </div>
                   
@@ -543,7 +549,7 @@
     <div id="checkOut">
       <form action="https://formtoemail.com/user_forms.php" method="post" class="fte">
         <h1>Review your order</h1><br>
-        <p>Please make sure to let me know about any allergies or requests</p>
+        <p>If anything is missing from your order please enter it in the box below and be sure to let me know about any allergies, questions or requests.</p>
         
         <input type="hidden" name="user_id" value="YKXQMB7R4OXW367DPDRO">
         <input type="hidden" name="form_id" value="1">
@@ -553,7 +559,7 @@
         
         <!-- <div name = "comments" class="orderHere"></div> -->
         <textarea id="orderHere" name="comments" rows="5" placeholder="Start your order..."></textarea>
-        <input type="submit" value="Place Order"> <span class="credit">Created with <a href="https://formtoemail.com" rel="nofollow"
+        <input type="submit" value="Send Order"> <span class="credit">Created with <a href="https://formtoemail.com" rel="nofollow"
           >FormToEmail</a></span>
       </form>
     </div>
@@ -590,99 +596,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Personal Javascript -->
-    <script src="./assets/scripts/fuck.js"></script>
-    <!-- <script type="text/javascript">
-    fuckinDoIt()
-// $('.count').on('click', function() {
-//   event.preventDefault()
-//   var $button = $(this)
-//   var oldValue = $button.parent().find('input').val()
-//   if ($button.text() == "+") {
-// 	  var newVal = parseFloat(oldValue) + 1;
-// 	} else {
-//    // Don't allow decrementing below zero
-//     if (oldValue > 0) {
-//       var newVal = parseFloat(oldValue) - 1;
-//     } else {
-//       newVal = 0;
-//     }
-//   }
-
-//   $button.parent().find("input").val(newVal);
-// })
-     
-//       let amount
-//       const count = () => {
-//         $('.count').on('click', function() {
-//           e.preventDefault()
-//           var $button = $(this);
-//           var oldVal = $button.parent().find('input').val()
-//           if($button.text() == '+') {
-//             var newVal = parseFloat(oldVal) + 1;
-//             amount = newVal
-//             console.log('added' + newVal)
-//           } else {
-//             if(oldVal > 0) {
-//               var newVal = parseFloat(oldVal) -1;
-//             } else {
-//             newVal = 0
-//           }
-//           }
-//         })
-//       }
-
-//       // document.getElementById('sendOrder').on('click', function () {
-        
-//       // })
-//     function fuckinDoIt(e) {
-//     let checks = document.getElementsByClassName('add-item-to-order');
-//     let radios = document.getElementsByClassName('add-side-to-order');
-//     let quantity;
-//     var str = ''
-   
-//     for(i= 0; i <checks.length; i++) {    
-//         if(checks[i].checked) {
-//           let parent = checks[i].parentElement.parentElement
-//           let amount = document.getElementsByClassName('amount-place')[i].value
-//           console.log(amount)
-//           str += "Item: " + amount + " " + checks[i].value +   ", "
-//         }
-//     }
-
-//     for(i= 0; i <radios.length; i++) {
-//         if(radios[i].checked) {
-//             str += "Combo Side: " + radios[i].value + ", "
-//         }
-//     }
-//     console.log(str)
-//     document.getElementById('orderHere').innerText = str
-//     }
-
-// var comboButtons = document.getElementsByClassName('comboMeal');
-// var i;
-// for(i = 0; i< comboButtons.length; i++) {
-//     comboButtons[i].addEventListener('click', function() {
-//       alert('click')
-//     }) 
-// }
-
-// var closeSideChoices = document.getElementsByClassName('combo-sides');
-// var i;
-// for(i = 0; i< closeSideChoices.length; i++) {
-//     closeSideChoices[i].addEventListener('click', function() {
-//         document.getElementById('side-options').style.display = 'none'
-//     })
-// }
-
-// const toTop = document.querySelector('.scroll-top')
-
-// window.addEventListener('scroll', () => {
-//     if(window.pageYOffset> 100) {
-//         toTop.classList.add('active')
-//     } else {
-//         toTop.classList.remove('active')
-//     }
-// })
-    </script> -->
+    <script src="./assets/scripts/index.js"></script>   
     </body>
 </html>
